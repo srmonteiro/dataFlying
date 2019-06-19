@@ -25,7 +25,7 @@
 
 ## DATA SOURCES: 
 
-*  Core file: ![2015 historical flight data](https://www.kaggle.com/freddejn/flights#flights.csv)
+*  Core file: [2015 historical flight data](https://www.kaggle.com/freddejn/flights#flights.csv)
 
 ## Programming Languages to be used:
 
