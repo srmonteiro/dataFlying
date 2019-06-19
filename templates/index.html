@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Our PAGE TITLE -->
+  <title>FLYpy</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<!-- Begin Body -->
+
+<body class="bg-dark">
+
+  <div class="container">
+    <div class="row bg-dark">
+
+    <!-- JUMBOtron Header -->
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Fare Air Dashboard</h1>
+        <p>Literally the best app ever designed for air travel and we are open to investors</p>
+      </div>
+    </div>
+
+    <!-- ROW 1  Filters and Wanna Get Away -->
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Departure:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <h5>Arrival:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">DEETS!</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h3>Here's where our Wanna Get Away Chart might land</h3>
+        <div id="pie"></div>
+      </div>
+  
+    </div>
+  </div>
+
+<!-- ROW 2 Best Travel Months -->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h3>Here's where our Best Months to Travel viz might land</h3>
+        <div id="bubble"></div>
+    </div>
+    <div class="col-md-2">
+        <div id="placeholder"></div>
+      </div>
+  </div>
+
+
+<!-- ROW 3 Hub Map -->
+  <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+          <h3>Here's where our Airport Hub Flight map might land</h3>
+          <div id="bubble"></div>
+      </div>
+      <div class="col-md-2">
+          <div id="placeholder"></div>
+        </div>
+    </div>
+
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> --> 
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script> 
+
+</body>
+
+</html>
