@@ -1,0 +1,336 @@
+//begin with a basic scaffold
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 900,
+  "height": 560,
+  "padding": {"top": 0, "left": 0, "right": 0, "bottom": 0},
+  "signals": [],
+  "data": [],
+  "scales": [],
+  "projections": [],
+  "marks": []
+}
+//To load the geographic data, add an entry to the data array:
+"data": [
+  {
+    "name": "states",
+    "url": "data/us-10m.json",
+    "format": {"type": "topojson", "feature": "states"}
+  }
+],
+//load the data,  To visualize the states, we next want to add a cartographic projection to map from (longitude, latitude) coordinates to (x, y) coordinates. While a number of projections might be reasonable choices, the Albers projection preserves area, and the special albersUsa version places Alaska and Hawaii in convenient viewing locations, which will allow us to better see flights originating in those states
+"projections": [
+  {
+    "name": "projection",
+    "type": "albersUsa",
+    "scale": 1200,
+    "translate": [{"signal": "width / 2"}, {"signal": "height / 2"}]
+  }
+],
+//generate outline paths for each state and plot them
+"marks": [
+  {
+    "type": "path",
+    "from": {"data": "states"},
+    "encode": {
+      "enter": {
+        "fill": {"value": "#dedede"},
+        "stroke": {"value": "white"}
+      },
+      "update": {
+        "path": {"field": "path"}
+      }
+    }
+  }
+]
+//plot the airports
+{
+  "name": "airports",
+  "url": "data/airports.csv",
+  "format": {"type": "csv", "parse": "auto"}
+}
+//To plot the data, we need to project the longitude and latitude variables to x and y coordinates
+{
+  "name": "airports",
+  "url": "data/airports.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "geopoint",
+      "projection": "projection",
+      "fields": ["longitude", "latitude"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.x != null && datum.y != null"
+    }
+  ]
+}
+//To visualize the airports, we add a new symbol mark entry to the marks array:
+{
+  "type": "symbol",
+  "from": {"data": "airports"},
+  "encode": {
+    "enter": {
+      "size": {"value": 16},
+      "fill": {"value": "steelblue"},
+      "fillOpacity": {"value": 0.8},
+      "stroke": {"value": "white"},
+      "strokeWidth": {"value": 1.5}
+    },
+    "update": {
+      "x": {"field": "x"},
+      "y": {"field": "y"}
+    }
+  }
+}
+//diplay the traffic for each airport
+{
+  "name": "traffic",
+  "url": "data/flights-airport.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "aggregate",
+      "groupby": ["origin"],
+      "fields": ["count"], "ops": ["sum"], "as": ["flights"]
+    }
+  ]
+}
+//combine (or in database terms, join) this data with our original airports data
+{
+  "name": "airports",
+  "url": "data/airports.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "lookup",
+      "from": "traffic", "key": "origin",
+      "fields": ["iata"], "as": ["traffic"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.traffic != null"
+    },
+    {
+      "type": "geopoint",
+      "projection": "projection",
+      "fields": ["longitude", "latitude"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.x != null && datum.y != null"
+    }
+  ]
+}
+//use the traffic data to size each airport based on the number of originating flights
+"scales": [
+  {
+    "name": "size",
+    "type": "linear",
+    "domain": {"data": "traffic", "field": "flights"},
+    "range": [16, 1000]
+  }
+],
+//define a linear scale that maps from the domain of flight counts to a range of [16, 1000] pixels
+{
+  "type": "symbol",
+  "from": {"data": "airports"},
+  "encode": {
+    "enter": {
+      "size": {"scale": "size", "field": "traffic.flights"},
+      "fill": {"value": "steelblue"},
+      "fillOpacity": {"value": 0.8},
+      "stroke": {"value": "white"},
+      "strokeWidth": {"value": 1.5}
+    },
+    "update": {
+      "x": {"field": "x"},
+      "y": {"field": "y"}
+    }
+  }
+}
+//add interactions to show the airport name and IATA id upon mouse hover
+"signals": [
+  {
+    "name": "hover",
+    "value": null,
+    "on": [
+      {"events": "symbol:mouseover", "update": "datum"},
+      {"events": "symbol:mouseout", "update": "null"}
+    ]
+  },
+  {
+    "name": "title",
+    "value": "U.S. Airports, 2008",
+    "update": "hover ? hover.name + ' (' + hover.iata + ')' : 'U.S. Airports, 2008'"
+  }
+],
+//create signals
+ {
+  "type": "text",
+  "interactive": false,
+  "encode": {
+    "enter": {
+      "x": {"signal": "width", "offset": -5},
+      "y": {"value": 0},
+      "fill": {"value": "black"},
+      "fontSize": {"value": 20},
+      "align": {"value": "right"}
+    },
+    "update": {
+      "text": {"signal": "title"}
+    }
+  }
+}
+//set the text layout and appearance
+"padding": {"top": 25, "left": 0, "right": 0, "bottom": 0},
+//visualizing points of varying size
+{
+  "name": "airports",
+  "url": "data/airports.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "lookup",
+      "from": "traffic", "key": "origin",
+      "fields": ["iata"], "as": ["traffic"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.traffic != null"
+    },
+    {
+      "type": "geopoint",
+      "projection": "projection",
+      "fields": ["longitude", "latitude"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.x != null && datum.y != null"
+    },
+    {
+      "type": "collect", "sort": {
+        "field": "traffic.flights",
+        "order": "descending"
+      }
+    }
+  ]
+}
+//visualize the connections among the airports
+{
+  "name": "routes",
+  "url": "data/flights-airport.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "lookup",
+      "from": "airports", "key": "iata",
+      "fields": ["origin", "destination"], "as": ["source", "target"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.source && datum.target"
+    },
+    {
+      "type": "linkpath",
+      "shape": "line"
+    }
+  ]
+}
+//add a new path mark to the marks array to visualize the routes:
+{
+  "type": "path",
+  "interactive": false,
+  "from": {"data": "routes"},
+  "encode": {
+    "enter": {
+      "path": {"field": "path"},
+      "stroke": {"value": "black"},
+      "strokeOpacity": {"value": 0.15}
+    }
+  }
+}
+//add hover-sensitive filtering 
+{
+  "name": "routes",
+  "url": "data/flights-airport.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "filter",
+      "expr": "hover && hover.iata == datum.origin"
+    },
+    ...
+  ]
+}
+//update the visualization to select the nearest airport to the mouse cursor
+{
+  "name": "airports",
+  "url": "data/airports.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    ...
+    {
+      "type": "voronoi", "x": "x", "y": "y"
+    },
+    {
+      "type": "collect", "sort": {
+        "field": "traffic.flights",
+        "order": "descending"
+      }
+    }
+  ]
+},
+//add the Voronoi cells to the visualization as an invisible set of path marks
+{
+  "type": "path",
+  "name": "cell",
+  "from": {"data": "airports"},
+  "encode": {
+    "enter": {
+      "fill": {"value": "transparent"}
+    },
+    "update": {
+      "path": {"field": "path"}
+    }
+  }
+},
+//set the fill to transparent to ensure that the Voronoi cells can’t be seen, but still receive input events
+"padding": {...},
+"autosize": "none",
+"signals": [...],
+//update our hover signal to respond to mouse events on the Voronoi cells instead of on the circle symbol marks
+{
+  "name": "hover",
+  "value": null,
+  "on": [
+    {"events": "@cell:mouseover", "update": "datum"},
+    {"events": "@cell:mouseout", "update": "null"}
+  ]
+},
+//add a new signal named cell_stroke to our signals array
+{
+  "name": "cell_stroke",
+  "value": null,
+  "on": [
+    {"events": "dblclick", "update": "cell_stroke ? null : 'brown'"},
+    {"events": "mousedown!", "update": "cell_stroke"}
+  ]
+}
+//update the Voronoi cell marks
+{
+  "type": "path",
+  "name": "cell",
+  "from": {"data": "airports"},
+  "encode": {
+    "enter": {
+      "fill": {"value": "transparent"},
+      "strokeWidth": {"value": 0.35}
+    },
+    "update": {
+      "path": {"field": "path"},
+      "stroke": {"signal": "cell_stroke"}
+    }
+  }
+},
