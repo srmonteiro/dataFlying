@@ -7,7 +7,7 @@
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../static/images/ds_hero_mk.jpg");
+  background-image: url("static/images/ds_hero_mk.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
