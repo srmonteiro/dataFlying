@@ -14,44 +14,64 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 
 <!-- Begin Body -->
 
-<body>
+<body class="body">
 
-  <div class="container">
+
+
     <div class="row">
-
-      <!-- Hero Header -->
-      <div class="col-md-12 hero text-center">
-        <h1>Fare Air Dashboard</h1>
-        <p>Literally the best app ever designed for air travel and we are open to investors</p>
-      </div>
-  </div>
-
-    <!-- ROW 1  Filters and Wanna Get Away -->
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Departure:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          <h5>Arrival:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <div class="hero">
+        <!-- Hero Header -->
+        <div class="col-md-12 text-center">
+          <h1>Fare Air Dashboard</h1>
+          <p>Literally the best app ever designed for air travel and we are open to investors</p>
         </div>
+    </div>
+    <div class="well">
+        <h5 class="h5 light">Departure:</h5>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        <h5 class="h5 light">Arrival:</h5>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      </div>
+  </div>  
+    <!-- ROW 1  Filters and Wanna Get Away -->
+    <hr>
+    <div class="container">
+    <div class="row">
+      
+      <div class="col-md-2">
+        <h3>At a Glance</h3>
+        <h5>Route Report</h5>
         <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">DEETS!</h3>
+          <div class="panel panel-body">
+              <h5 class="h5 light"><p>Cheapest Flight: <br>$201.70</p>
+                  <p>Flight Duration: <br>2hr 20min</p>
+                  <p>Average Delay: <br>14min</p>
+            </h5>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+
+<!-- Here's where we connect to the Flight Stats: Cheapest Fare,  -->
+<!-- id #flight-stats-panel -->
+
+          <div id="flight-stats-panel" class="panel-body"></div>
         </div>
       </div>
       <div class="col-md-8">
         <h3>Here's where our Wanna Get Away Table might land</h3>
-        <div id="pie"></div>
-        <table class="table table-bordered table-striped">
-            <thead class="table-primary">
+        <h5 class="text-dark">Flights available for your itinerary, via the 
+            <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Egencia API</a>
+          </h5>
+
+<!-- Here's where we connect to the Wanna Get Away Flight Table  -->
+<!-- id #flight-table-area -->
+
+        <div id="flight-table-area"></div>
+        <table class="table table-bordered table-hover" style="background-color: #303030; padding:25px">
+            <thead class="table-primary" style="background-color: black;">
               <th class="table-primary">	Airline	</th>
               <th class="table-primary">	Time	</th>
               <th class="table-primary">	Length	</th>
@@ -79,35 +99,76 @@
       </div>
   
     </div>
+    <hr>
   </div>
+</div>
+<!-- ROW 2 Best Travel Months Viz -->
 
-<!-- ROW 2 Best Travel Months -->
+<div class="container">
   <div class="row">
     <div class="col-md-2">
       <div id="placeholder"></div>
     </div>
     <div class="col-md-8">
-        <h3>Here's where our Best Months to Travel viz might land</h3>
-        <div id="bubble"></div>
-        <img src="../static/images/delaystest.png">
+        <h3>Best times to fly your itinerary</h3>
+        
+        <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
+          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>
+        </h5>
+
+<!-- Here's where we connect to Ease of Travel Graphics  -->
+<!-- id #flight-delays-->
+
+        <div id="flight-delays"></div>
+        <img src="../static/images/delaystest.png" width="100%"> 
     </div>
     <div class="col-md-2">
       <div id="placeholder"></div>
     </div>
-  </div>
+  </div><br>
+  <hr>
+</div>
 
 
 <!-- ROW 3 Hub Map -->
+<div class="container">
   <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-          <h3>Here's where our Airport Hub Flight map might land</h3>
-          <div id="bubble"></div>
+
+          <h3>Flight prices from your hub</h3>
+        
+          <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
+            <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>
+          </h5>
+
+<!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
+<!-- id #hub-price-map-d3 -->
+
+          <div id="hub-price-map-d3"></div>
+          <img src="../static/images/inspiration_1.png" width="100%">
       </div>
       <div class="col-md-2">
           <div id="placeholder"></div>
-        </div>
+      </div>
     </div>
+  </div>
+
+<!-- Footer -->
+<!-- Footer -->
+
+  <footer>
+    <!-- Footer Links -->
+  <br><br><br>
+    <!-- Copyright --> 
+    <div style="background-color: #1b3146; padding: 20px;" class="footer-copyright text-center py-3" id="footer-strip">
+        Group 2 // Project 2 // dataFlying (c) Copywrite Coding Bootcamp 2017
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
 
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
