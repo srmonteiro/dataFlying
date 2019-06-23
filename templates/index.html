@@ -32,11 +32,27 @@
         </div>
     </div>
     <div class="well">
-        <h5 class="h5 light">Departure:</h5>
-        <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        <h5 class="h5 light">Arrival:</h5>
-        <select id="selDataset" onchange="optionChanged(this.value)"></select>
-      </div>
+      <table class="table" width="100%">
+        <tr>
+          <td>
+            <h5 class="h5 light">Departure:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </td>
+          <td>
+            <h5 class="h5 light">Arrival:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </td>
+          <td>
+            <h5 class="h5 light">Month:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </td>
+          <td>
+            <h5 class="h5 light">Arrival:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>  
     <!-- ROW 1  Filters and Wanna Get Away -->
     <hr>
@@ -47,19 +63,20 @@
         <h3>At a Glance</h3>
         <h5>Route Report</h5>
         <div class="panel panel-primary">
-          <div class="panel panel-body">
-              <h5 class="h5 light"><p>Cheapest Flight: <br>$201.70</p>
-                  <p>Flight Duration: <br>2hr 20min</p>
-                  <p>Average Delay: <br>14min</p>
+          <div class="panel panel-body" style="background-color: #1b3146">
+            <h5 class="h5 light"><p>Cheapest Flight: <br>$201.70</p>
+              <p>Flight Duration: <br>2hr 20min</p>
+              <p>Average Delay: <br>14min</p>
             </h5>
-          </div>
-
 <!-- Here's where we connect to the Flight Stats: Cheapest Fare,  -->
 <!-- id #flight-stats-panel -->
-
-          <div id="flight-stats-panel" class="panel-body"></div>
+            <div id="flight-stats-panel" class="panel-body" style="background-color: #1b3146"></div>
+          </div>
         </div>
       </div>
+
+<!--Wanna Get Away Container Begins  -->
+
       <div class="col-md-8">
         <h3>Here's where our Wanna Get Away Table might land</h3>
         <h5 class="text-dark">Flights available for your itinerary, via the 
@@ -70,7 +87,10 @@
 <!-- id #flight-table-area -->
 
         <div id="flight-table-area"></div>
-        <table class="table table-bordered table-hover" style="background-color: #303030; padding:25px">
+
+<!-- Wanna Get Away Flight Table Stock data for reference -->
+
+        <table class="table table-bordered table-hover" style="background-color: #1b3146; padding:25px">
             <thead class="table-primary" style="background-color: black;">
               <th class="table-primary">	Airline	</th>
               <th class="table-primary">	Time	</th>
@@ -102,6 +122,7 @@
     <hr>
   </div>
 </div>
+
 <!-- ROW 2 Best Travel Months Viz -->
 
 <div class="container">
