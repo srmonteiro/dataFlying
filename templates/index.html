@@ -15,8 +15,14 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-</head>
 
+  <!-- D3 -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+
+</head>
 <!-- Begin Body -->
 
 <body class="body">
@@ -194,17 +200,27 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
 
-          <h3>Flight prices from your hub</h3>
+          <h3>Flight prices for your hub</h3>
         
-          <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
-            <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>
+          <h5 class="text-dark">Extending a Vega package developed by 
+            <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Mike Bostock, creator of d3</a>
+            , and connecting with the <a href="https://www.scrapehero.com/scrape-flight-schedules-and-prices-from-expedia/" target="_blank">
+            Egencia API</a>, you can find the lowest price direct flights from your hub, taking off in the next 48 hrs. 
           </h5>
 
 <!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
 <!-- id #hub-price-map-d3 -->
 
-          <div id="hub-price-map-d3"></div>
-          <img src="../static/images/inspiration_1.png" width="100%">
+          
+        <img src="../static/images/inspiration_1.png" width="100%">
+
+        <div id="hub-price-map-d3"></div>
+        <script type="text/javascript" src="../static/js/d3_map_test.js"></script>
+        
+        
+        
+        
+        <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
       </div>
       <div class="col-md-2">
           <div id="placeholder"></div>
