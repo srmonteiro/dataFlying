@@ -1,8 +1,4 @@
-<script type="text/javascript" src="d3/d3.js"></script>
-        <script type="text/javascript" src="d3/d3.csv.js"></script>
-        <script type="text/javascript" src="d3/d3.geo.js"></script>
-        <script type="text/javascript" src="d3/d3.geom.js"></script>
-        <script type="text/javascript">
+
 
         var w = 1280,
             h = 800;
@@ -40,7 +36,7 @@
               .attr("d", path);
         });
         
-        d3.csv("flights-airport.csv", function(flights) {
+        d3.csv("flights-airport-vega.csv", function(flights) {
           var linksByOrigin = {},
               countByAirport = {},
               locationByAirport = {},
@@ -59,7 +55,7 @@
             countByAirport[destination] = (countByAirport[destination] || 0) + 1;
           });
         
-          d3.csv("airports.csv", function(airports) {
+          d3.csv("airports_vega.csv", function(airports) {
         
             // Only consider airports with at least one flight.
             airports = airports.filter(function(airport) {
@@ -99,4 +95,4 @@
           });
         });
         
-            </script>
+            // </script>

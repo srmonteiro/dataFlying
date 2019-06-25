@@ -16,10 +16,7 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 
-  <!-- D3 -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 
 
 </head>
@@ -29,13 +26,13 @@
 
 
 
-    <div class="row">
-      <div class="hero">
-        <!-- Hero Header -->
-        <div class="col-md-12 text-center">
-          <h1>Fare Air Dashboard</h1>
-          <p>Literally the best app ever designed for air travel and we are open to investors</p>
-        </div>
+  <div class="row">
+    <div class="hero">
+      <!-- Hero Header -->
+      <div class="col-md-12 text-center">
+        <h1>Fare Air Dashboard</h1>
+        <p>Literally the best app ever designed for air travel and we are open to investors</p>
+      </div>
     </div>
     <div class="well">
       <table class="table" style="padding:20px;" width="100%">
@@ -57,189 +54,240 @@
     </div>
 
     <div class="well">
-      
-<form>
-        <table class="table"  width="100%">
+
+      <form>
+        <table class="table" width="100%">
           <tr>
             <td>
               <div class="form-group">
-                  <ul class="list-group" id="filters">
-                    <li class="filter list-group-item">
-                      <label for="date">Origin:</label>
-                      <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
-                    </li>
-                  </ul>
-                </div>
+                <ul class="list-group" id="filters">
+                  <li class="filter list-group-item">
+                    <label for="date">Origin:</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
+                  </li>
+                </ul>
+              </div>
             </td>
             <td>
-                <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Destination</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
-                      </li>
-                    </ul>
-                  </div>
+              <div class="form-group">
+                <ul class="list-group" id="filters">
+                  <li class="filter list-group-item">
+                    <label for="date">Destination</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
+                  </li>
+                </ul>
+              </div>
             </td>
             <td>
-                <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="07/01/2019">
-                      </li>
-                    </ul>
-                  </div>
+              <div class="form-group">
+                <ul class="list-group" id="filters">
+                  <li class="filter list-group-item">
+                    <label for="date">Enter a Date</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="07/01/2019">
+                  </li>
+                </ul>
+              </div>
             </td>
           </tr>
         </table>
         <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
       </form>
-      </div>
-  </div>  
-    <!-- ROW 1  Filters and Wanna Get Away -->
-    <hr>
-    <div class="container">
+    </div>
+  </div>
+  <!-- ROW 1  Filters and Wanna Get Away -->
+  <hr>
+  <div class="container">
     <div class="row">
-      
+
       <div class="col-md-2">
         <h3>At a Glance</h3>
         <h5>Route Report</h5>
         <div class="panel panel-primary">
           <div class="panel panel-body" style="background-color: #1b3146">
-            <h5 class="h5 light"><p>Cheapest Flight: <br>$201.70</p>
+            <h5 class="h5 light">
+              <p>Cheapest Flight: <br>$201.70</p>
               <p>Flight Duration: <br>2hr 20min</p>
               <p>Average Delay: <br>14min</p>
             </h5>
-<!-- Here's where we connect to the Flight Stats: Cheapest Fare,  -->
-<!-- id #flight-stats-panel -->
+            <!-- Here's where we connect to the Flight Stats: Cheapest Fare,  -->
+            <!-- id #flight-stats-panel -->
             <div id="flight-stats-panel" class="panel-body" style="background-color: #1b3146"></div>
           </div>
         </div>
       </div>
 
-<!--Wanna Get Away Container Begins  -->
+      <!--Wanna Get Away Container Begins  -->
 
       <div class="col-md-8">
         <h3>Here's where our Wanna Get Away Table might land</h3>
-        <h5 class="text-dark">Flights available for your itinerary, via the 
-            <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Egencia API</a>
-          </h5>
+        <h5 class="text-dark">Flights available for your itinerary, via the
+          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Egencia API</a>
+        </h5>
 
-<!-- Here's where we connect to the Wanna Get Away Flight Table  -->
-<!-- id #flight-table-area -->
+        <!-- Here's where we connect to the Wanna Get Away Flight Table  -->
+        <!-- id #flight-table-area -->
 
         <div id="flight-table-area"></div>
 
-<!-- Wanna Get Away Flight Table Stock data for reference -->
+        <!-- Wanna Get Away Flight Table Stock data for reference -->
 
         <table class="table table-bordered table-hover" style="background-color: #1b3146; padding:25px">
-            <thead class="table-primary" style="background-color: black;">
-              <th class="table-primary">	Airline	</th>
-              <th class="table-primary">	Time	</th>
-              <th class="table-primary">	Length	</th>
-              <th class="table-primary">	Route	</th>
-              <th class="table-primary">	Type	</th>
-              <th class="table-primary">	 Price 	</th>
-            </thead>
-            <tbody>
+          <thead class="table-primary" style="background-color: black;">
+            <th class="table-primary"> Airline </th>
+            <th class="table-primary"> Time </th>
+            <th class="table-primary"> Length </th>
+            <th class="table-primary"> Route </th>
+            <th class="table-primary"> Type </th>
+            <th class="table-primary"> Price </th>
+          </thead>
+          <tbody>
             <tr>
-              <td>	American	</td>
-              <td>	3:30 PM – 5:23 PM	</td>
-              <td>	3h 53m	</td>
-              <td>	ORD–LAS	</td>
-              <td>	Nonstop	</td>
-              <td>	 $341.00 	</td>
+              <td> American </td>
+              <td> 3:30 PM – 5:23 PM </td>
+              <td> 3h 53m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $341.00 </td>
             </tr>
-              <tr><td>	United	</td><td>	8:01 AM – 9:53 AM	</td><td>	3h 52m	</td><td>	ORD–LAS	</td><td>	Nonstop	</td><td>	 $361.00 	</td></tr>
-              <tr><td>	United	</td><td>	12:45 PM – 2:47 PM	</td><td>	4h 2m	</td><td>	ORD–LAS	</td><td>	Nonstop	</td><td>	 $361.00 	</td></tr>
-              <tr><td>	United	</td><td>	3:55 PM – 5:57 PM	</td><td>	4h 2m	</td><td>	ORD–LAS	</td><td>	Nonstop	</td><td>	 $361.00 	</td></tr>
-              <tr><td>	American	</td><td>	12:40 PM – 2:31 PM	</td><td>	3h 51m	</td><td>	ORD–LAS	</td><td>	Nonstop	</td><td>	 $376.00 	</td></tr>
-              <tr><td>	United	</td><td>	10:30 AM – 12:31 PM	</td><td>	4h 1m	</td><td>	ORD–LAS	</td><td>	Nonstop	</td><td>	 $391.00 	</td></tr>
-              <tr><td>	American	</td><td>	10:05 AM – 12:01 PM	</td><td>	3h 56m	</td><td>	ORD–LAS	</td><td>	Nonstop	</td><td>	 $448.00 	</td></tr>
+            <tr>
+              <td> United </td>
+              <td> 8:01 AM – 9:53 AM </td>
+              <td> 3h 52m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $361.00 </td>
+            </tr>
+            <tr>
+              <td> United </td>
+              <td> 12:45 PM – 2:47 PM </td>
+              <td> 4h 2m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $361.00 </td>
+            </tr>
+            <tr>
+              <td> United </td>
+              <td> 3:55 PM – 5:57 PM </td>
+              <td> 4h 2m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $361.00 </td>
+            </tr>
+            <tr>
+              <td> American </td>
+              <td> 12:40 PM – 2:31 PM </td>
+              <td> 3h 51m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $376.00 </td>
+            </tr>
+            <tr>
+              <td> United </td>
+              <td> 10:30 AM – 12:31 PM </td>
+              <td> 4h 1m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $391.00 </td>
+            </tr>
+            <tr>
+              <td> American </td>
+              <td> 10:05 AM – 12:01 PM </td>
+              <td> 3h 56m </td>
+              <td> ORD–LAS </td>
+              <td> Nonstop </td>
+              <td> $448.00 </td>
+            </tr>
           </tbody>
         </table>
       </div>
-  
+
     </div>
     <hr>
   </div>
-</div>
+  </div>
 
-<!-- ROW 2 Best Travel Months Viz -->
+  <!-- ROW 2 Best Travel Months Viz -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <div id="placeholder"></div>
-    </div>
-    <div class="col-md-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div id="placeholder"></div>
+      </div>
+      <div class="col-md-8">
         <h3>Best times to fly your itinerary</h3>
-        
+
         <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
           <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>
         </h5>
 
-<!-- Here's where we connect to Ease of Travel Graphics  -->
-<!-- id #flight-delays-->
+        <!-- Here's where we connect to Ease of Travel Graphics  -->
+        <!-- id #flight-delays-->
 
         <div id="flight-delays"></div>
-        <img src="../static/images/delaystest.png" width="100%"> 
-    </div>
-    <div class="col-md-2">
-      <div id="placeholder"></div>
-    </div>
-  </div><br>
-  <hr>
-</div>
+        <img src="../static/images/delaystest.png" width="100%">
+      </div>
+      <div class="col-md-2">
+        <div id="placeholder"></div>
+      </div>`
+    </div><br>
+    <hr>
+  </div>
 
 
-<!-- ROW 3 Hub Map -->
-<div class="container">
-  <div class="row">
+  <!-- ROW 3 Hub Map -->
+  <div class="container">
+    <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
 
-          <h3>Flight prices for your hub</h3>
-        
-          <h5 class="text-dark">Extending a Vega package developed by 
-            <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Mike Bostock, creator of d3</a>
-            , and connecting with the <a href="https://www.scrapehero.com/scrape-flight-schedules-and-prices-from-expedia/" target="_blank">
-            Egencia API</a>, you can find the lowest price direct flights from your hub, taking off in the next 48 hrs. 
-          </h5>
+        <h3>Flight prices for your hub</h3>
 
-<!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
-<!-- id #hub-price-map-d3 -->
+        <h5 class="text-dark">Extending a Vega package developed by
+          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Mike Bostock, creator of d3</a>
+          , and connecting with the <a
+            href="https://www.scrapehero.com/scrape-flight-schedules-and-prices-from-expedia/" target="_blank">
+            Egencia API</a>, you can find the lowest price direct flights from your hub, taking off in the next 48 hrs.
+        </h5>
 
-          
+        <!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
+        <!-- id #hub-price-map-d3 -->
+
+
         <img src="../static/images/inspiration_1.png" width="100%">
 
         <div id="hub-price-map-d3"></div>
-        <script type="text/javascript" src="../static/js/d3_map_test.js"></script>
+  
+  
+        <!-- D3 -->
         
-        
-        
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+        <script type="text/javascript" src="d3/d3.js"></script>
+        <script type="text/javascript" src="d3/d3.csv.js"></script>
+        <script type="text/javascript" src="d3/d3.geo.js"></script>
+        <script type="text/javascript" src="d3/d3.geom.js"></script>
+        <script type="text/javascript" src="vega_D3.js"></script>
+
         <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
       </div>
       <div class="col-md-2">
-          <div id="placeholder"></div>
+        <div id="placeholder"></div>
       </div>
     </div>
   </div>
 
-<!-- Footer -->
-<!-- Footer -->
+  <!-- Footer -->
+  <!-- Footer -->
 
   <footer>
     <!-- Footer Links -->
-  <br><br><br>
-    <!-- Copyright --> 
+    <br><br><br>
+    <!-- Copyright -->
     <div style="background-color: #1b3146; padding: 20px;" class="footer-copyright text-center py-3" id="footer-strip">
-        Group 2 // Project 2 // dataFlying (c) Copywrite Coding Bootcamp 2017
+      Group 2 // Project 2 // dataFlying (c) Copywrite Coding Bootcamp 2017
     </div>
     <!-- Copyright -->
-  
+
   </footer>
   <!-- Footer -->
 
@@ -248,8 +296,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> --> 
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script> 
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
 
 </body>
 
