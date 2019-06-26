@@ -8,7 +8,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #E7F7F8;
+  background: white;
 }
 h3 {
   color: black;
@@ -134,6 +134,11 @@ select {
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
 }
+
+.filter-bg {
+  background-color: #1b3146;
+}
+
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {

@@ -34,34 +34,41 @@
         <p>Literally the best app ever designed for air travel and we are open to investors</p>
       </div>
     </div>
-    <div class="well">
-      <table class="table" style="padding:20px;" width="100%">
+    <div class="well filter-bg">
+        <div class="container">
+      <table class="table" style="padding:20px; align-self: center;" width="100%">
         <tr>
-          <td>
+          <td class="form-group filter-bg">
             <h5 class="h5 light">Departure:</h5>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </td>
-          <td>
+          <td class="form-group filter-bg">
             <h5 class="h5 light">Arrival:</h5>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </td>
-          <td>
+          <td class="form-group filter-bg">
             <h5 class="h5 light">Month:</h5>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </td>
+          <td class="form-group filter-bg">
+              
+              <button id="filter-btn" type="submit" class="btn btn-default" style="margin-top: 30px; width: 50%">Show me the flights</button>
+          
           </td>
         </tr>
       </table>
     </div>
-
-    <div class="well">
+    </div>
+    
+    <div class="well filter-bg">
 
       <form>
-        <table class="table" width="100%">
+        <table class="table filter-bg" width="100%">
           <tr>
             <td>
-              <div class="form-group">
-                <ul class="list-group" id="filters">
-                  <li class="filter list-group-item">
+              <div class="form-group filter-bg">
+                <ul class="list-group filter-bg" id="filters">
+                  <li class="filter list-group-item filter-bg">
                     <label for="date">Origin:</label>
                     <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
                   </li>
@@ -69,9 +76,9 @@
               </div>
             </td>
             <td>
-              <div class="form-group">
-                <ul class="list-group" id="filters">
-                  <li class="filter list-group-item">
+              <div class="form-group filter-bg">
+                <ul class="list-group filter-bg" id="filters">
+                  <li class="filter list-group-item filter-bg">
                     <label for="date">Destination</label>
                     <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
                   </li>
@@ -79,18 +86,23 @@
               </div>
             </td>
             <td>
-              <div class="form-group">
-                <ul class="list-group" id="filters">
-                  <li class="filter list-group-item">
+              <div class="form-group filter-bg">
+                <ul class="list-group filter-bg" id="filters">
+                  <li class="filter list-group-item filter-bg">
                     <label for="date">Enter a Date</label>
                     <input class="form-control" id="datetime" type="text" placeholder="07/01/2019">
                   </li>
                 </ul>
               </div>
             </td>
+            <td>
+              
+                <button id="filter-btn" type="submit" class="btn btn-default" style="margin-top: 30px; width: 100%">Show me the flights</button>
+            
+            </td>
           </tr>
         </table>
-        <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+        
       </form>
     </div>
   </div>
@@ -118,7 +130,7 @@
 
       <!--Wanna Get Away Container Begins  -->
 
-      <div class="col-md-8">
+      <div class="col-md-10">
         <h3>Here's where our Wanna Get Away Table might land</h3>
         <h5 class="text-dark">Flights available for your itinerary, via the
           <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Egencia API</a>
@@ -213,7 +225,7 @@
       <div class="col-md-2">
         <div id="placeholder"></div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-10">
         <h3>Best times to fly your itinerary</h3>
 
         <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
@@ -226,9 +238,7 @@
         <div id="flight-delays"></div>
         <img src="images/delaystest.png" width="100%">
       </div>
-      <div class="col-md-2">
-        <div id="placeholder"></div>
-      </div>`
+     
     </div><br>
     <hr>
   </div>
@@ -238,7 +248,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2"></div>
-      <div class="col-md-8">
+      <div class="col-md-10">
 
         <h3>Flight prices for your hub</h3>
 
@@ -262,16 +272,14 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-        <script type="text/javascript" src="d3/d3.js"></script>
+        <!-- <script type="text/javascript" src="d3/d3.js"></script>
         <script type="text/javascript" src="d3/d3.csv.js"></script>
+        
+        <script type="text/javascript" src="d3/d3.geom.js"></script> -->
         <script type="text/javascript" src="d3/d3.geo.js"></script>
-        <script type="text/javascript" src="d3/d3.geom.js"></script>
         <script type="text/javascript" src="vega_D3.js"></script>
 
         <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
-      </div>
-      <div class="col-md-2">
-        <div id="placeholder"></div>
       </div>
     </div>
   </div>

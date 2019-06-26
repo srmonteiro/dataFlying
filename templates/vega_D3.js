@@ -29,14 +29,14 @@
           cells.classed("voronoi", this.checked);
         });
         
-        d3.json("us-states.json", function(collection) {
-          states.selectAll("path")
-              .data(collection.features)
-            .enter().append("svg:path")
-              .attr("d", path);
-        });
+        // d3.json("node_modules/us-10m.json", function(collection) {
+        //   states.selectAll("path")
+        //       .data(collection.features)
+        //     .enter().append("svg:path")
+        //       .attr("d", path);
+        // });
         
-        d3.csv("../db/data/flights-airport-vega.csv", function(flights) {
+        d3.csv("flights-airport-vega.csv", function(flights) {
           var linksByOrigin = {},
               countByAirport = {},
               locationByAirport = {},
@@ -55,7 +55,7 @@
             countByAirport[destination] = (countByAirport[destination] || 0) + 1;
           });
         
-          d3.csv("../../db/data/airports_vega.csv", function(airports) {
+          d3.csv("airports_vega.csv", function(airports) {
         
             // Only consider airports with at least one flight.
             airports = airports.filter(function(airport) {
