@@ -116,7 +116,7 @@ select {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                    rgba(0, 0, 0, 0.5)), 
-                   url("../../templates/hero/planetraffic.jpg");
+                   url("hero.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
