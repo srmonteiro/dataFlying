@@ -1,0 +1,782 @@
+[
+    {
+        "stops": "Nonstop",
+        "ticket price": "276.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 1 hours 59 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:10pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "6:09pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "362.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 1 hours 57 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "11:49am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "2:46pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "362.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 1 minutes",
+        "airline": "Delta",
+        "plane": "Boeing (Douglas) MD-90",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "11:59am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "3:00pm"
+            }
+        ],
+        "plane code": "M90"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "362.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 5 minutes",
+        "airline": "United",
+        "plane": "Embraer 175 (Enhanced Winglets)",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:55pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "4:00pm"
+            }
+        ],
+        "plane code": "E7W"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "362.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 6 minutes",
+        "airline": "United",
+        "plane": "Embraer 170",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:00am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:06am"
+            }
+        ],
+        "plane code": "E70"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "362.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 6 minutes",
+        "airline": "Delta",
+        "plane": "Boeing (Douglas) MD-90",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "1:06pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "4:12pm"
+            }
+        ],
+        "plane code": "M90"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 3 hours 51 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:36am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "12:34pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "1:09pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "2:27pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 43 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:36am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "12:34pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "3:00pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "4:19pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 4 hours 28 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:09pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "7:11pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "8:19pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "9:37pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 4 hours 31 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:21pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "9:26pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "10:41pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:52pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 4 hours 6 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "11:55am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "2:55pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "3:43pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "5:01pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 43 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:09pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "7:11pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "10:41pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:52pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 52 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "1:45pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "4:52pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "8:19pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "9:37pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 8 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:19am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "10:20am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "1:09pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "2:27pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 25 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:36am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "12:34pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "3:43pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "5:01pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "377.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 2 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:19am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "10:20am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "11:55am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "1:21pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 9 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:50pm",
+                "arrival_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "arrival_time": "8:00pm"
+            },
+            {
+                "departure_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "departure_time": "8:44pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "10:59pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 52 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:05pm",
+                "arrival_airport": "Washington, DC (DCA-Ronald Reagan Washington National)",
+                "arrival_time": "2:59pm"
+            },
+            {
+                "departure_airport": "Washington, DC (DCA-Ronald Reagan Washington National)",
+                "departure_time": "4:57pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "6:57pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 11 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:41pm",
+                "arrival_airport": "Miami, FL (MIA-Miami Intl.)",
+                "arrival_time": "8:54pm"
+            },
+            {
+                "departure_airport": "Miami, FL (MIA-Miami Intl.)",
+                "departure_time": "9:55pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:52pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 7 hours 3 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:47pm",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "6:20pm"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "8:39pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:50pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 41 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 787-8",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "1:20pm",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "3:46pm"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "4:44pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "8:01pm"
+            }
+        ],
+        "plane code": "788"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 2 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:02pm",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "5:34pm"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "6:49pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "10:04pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 47 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A320",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:05pm",
+                "arrival_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "arrival_time": "6:17pm"
+            },
+            {
+                "departure_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "departure_time": "7:35pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "9:52pm"
+            }
+        ],
+        "plane code": "320"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 7 hours 3 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "1:59pm",
+                "arrival_airport": "Washington, DC (DCA-Ronald Reagan Washington National)",
+                "arrival_time": "4:54pm"
+            },
+            {
+                "departure_airport": "Washington, DC (DCA-Ronald Reagan Washington National)",
+                "departure_time": "8:00pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "10:02pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 54 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A320",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:05pm",
+                "arrival_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "arrival_time": "6:17pm"
+            },
+            {
+                "departure_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "departure_time": "8:44pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "10:59pm"
+            }
+        ],
+        "plane code": "320"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 36 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:00am",
+                "arrival_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "arrival_time": "10:01am"
+            },
+            {
+                "departure_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "departure_time": "12:25pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "2:36pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 35 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:01pm",
+                "arrival_airport": "Miami, FL (MIA-Miami Intl.)",
+                "arrival_time": "7:21pm"
+            },
+            {
+                "departure_airport": "Miami, FL (MIA-Miami Intl.)",
+                "departure_time": "8:40pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "10:36pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 33 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:17pm",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "7:46pm"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "8:39pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:50pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 7 hours 12 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "1:40pm",
+                "arrival_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "arrival_time": "4:55pm"
+            },
+            {
+                "departure_airport": "Philadelphia, PA (PHL-Philadelphia Intl.)",
+                "departure_time": "7:35pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "9:52pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 6 hours 56 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:05pm",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "2:31pm"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "4:44pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "8:01pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "380.00",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 5 hours 45 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:17pm",
+                "arrival_airport": "Washington, DC (DCA-Ronald Reagan Washington National)",
+                "arrival_time": "6:15pm"
+            },
+            {
+                "departure_airport": "Washington, DC (DCA-Ronald Reagan Washington National)",
+                "departure_time": "8:00pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "10:02pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "456.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 17 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "2:05pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "5:22pm"
+            }
+        ],
+        "plane code": "739"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "456.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 4 minutes",
+        "airline": "United",
+        "plane": "Canadian Regional Jet 700",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:40am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "12:44pm"
+            }
+        ],
+        "plane code": "CR7"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "456.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 2 hours 2 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:30am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "11:32am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "456.60",
+        "departure": ", Chicago",
+        "arrival": ", Atlanta",
+        "flight duration": "0 days 1 hours 55 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:00am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "8:55am"
+            }
+        ],
+        "plane code": "739"
+    }
+]

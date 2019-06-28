@@ -1,0 +1,722 @@
+[
+    {
+        "stops": "Nonstop",
+        "ticket price": "144.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 28 minutes",
+        "airline": "Delta",
+        "plane": "Canadair Regional Jet 900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:08pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "9:36pm"
+            }
+        ],
+        "plane code": "CR9"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 5 hours 9 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "11:55am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "2:55pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "3:53pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "6:04pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 56 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:25am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "8:19am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "9:20am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "11:21am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 46 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:21pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "9:26pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "10:10pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "12:07am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 7 hours 35 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:25am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "8:19am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "11:52am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "2:00pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 5 hours 53 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:19am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "11:20am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "1:09pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "3:12pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 7 hours 28 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:36am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "12:34pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "3:53pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "6:04pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 41 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:19am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "11:20am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "11:52am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "2:00pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 36 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:36am",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "12:34pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "1:09pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "3:12pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "151.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 6 hours 58 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:09pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "7:11pm"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "10:10pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "12:07am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "153.00",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 39 minutes",
+        "airline": "American Airlines",
+        "plane": "Canadian Regional Jet 700",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:06am",
+                "arrival_airport": "Columbus, OH (CMH-John Glenn Columbus Intl.)",
+                "arrival_time": "11:31am"
+            },
+            {
+                "departure_airport": "Columbus, OH (CMH-John Glenn Columbus Intl.)",
+                "departure_time": "12:38pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "2:45pm"
+            }
+        ],
+        "plane code": "CR7"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "153.00",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 7 minutes",
+        "airline": "American Airlines",
+        "plane": "Canadian Regional Jet 700",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:57am",
+                "arrival_airport": "Cleveland, OH (CLE-Hopkins Intl.)",
+                "arrival_time": "11:26am"
+            },
+            {
+                "departure_airport": "Cleveland, OH (CLE-Hopkins Intl.)",
+                "departure_time": "12:19pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "2:04pm"
+            }
+        ],
+        "plane code": "CR7"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "178.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 28 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:21pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "11:49pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "178.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 25 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "11:37am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "3:02pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "178.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 27 minutes",
+        "airline": "JetBlue Airways",
+        "plane": "Embraer 190",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:13pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "10:40pm"
+            }
+        ],
+        "plane code": "E90"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "178.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 21 minutes",
+        "airline": "JetBlue Airways",
+        "plane": "Embraer 190",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "10:09am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "1:30pm"
+            }
+        ],
+        "plane code": "E90"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "198.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 26 minutes",
+        "airline": "Delta",
+        "plane": "Canadair Regional Jet 900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:00pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "3:26pm"
+            }
+        ],
+        "plane code": "CR9"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "198.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 16 minutes",
+        "airline": "Delta",
+        "plane": "Embraer 175 (Enhanced Winglets)",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:29am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "9:45am"
+            }
+        ],
+        "plane code": "E7W"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "198.30",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 2 hours 27 minutes",
+        "airline": "Delta",
+        "plane": "Canadair Regional Jet 900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "2:33pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "6:00pm"
+            }
+        ],
+        "plane code": "CR9"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "237.00",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 3 hours 56 minutes",
+        "airline": "American Airlines",
+        "plane": "Embraer RJ145",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:14am",
+                "arrival_airport": "Baltimore, MD (BWI-Baltimore Washington Intl. Thurgood Marshall)",
+                "arrival_time": "11:20am"
+            },
+            {
+                "departure_airport": "Baltimore, MD (BWI-Baltimore Washington Intl. Thurgood Marshall)",
+                "departure_time": "11:51am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "1:10pm"
+            }
+        ],
+        "plane code": "ER4"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "559.50",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 8 hours 18 minutes",
+        "airline": "",
+        "plane": "Airbus A319",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:30pm",
+                "arrival_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "arrival_time": "12:17am"
+            },
+            {
+                "departure_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "departure_time": "5:25am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "6:48am"
+            }
+        ],
+        "plane code": "319"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "582.22",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 12 hours 8 minutes",
+        "airline": "",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:30pm",
+                "arrival_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "arrival_time": "12:40am"
+            },
+            {
+                "departure_airport": "Charlotte, NC (CLT-Charlotte-Douglas Intl.)",
+                "departure_time": "8:35am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "10:38am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "591.79",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 10 hours 38 minutes",
+        "airline": "",
+        "plane": "Boeing 737-900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:30pm",
+                "arrival_airport": "Boston, MA (BOS-Logan Intl.)",
+                "arrival_time": "10:53pm"
+            },
+            {
+                "departure_airport": "Boston, MA (BOS-Logan Intl.)",
+                "departure_time": "5:45am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "7:08am"
+            }
+        ],
+        "plane code": "739"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "614.45",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 5 hours 0 minutes",
+        "airline": "",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "2:03pm",
+                "arrival_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "arrival_time": "4:42pm"
+            },
+            {
+                "departure_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "departure_time": "6:24pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "8:03pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "614.45",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 3 hours 44 minutes",
+        "airline": "",
+        "plane": "Airbus A319",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:45am",
+                "arrival_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "arrival_time": "10:27am"
+            },
+            {
+                "departure_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "departure_time": "11:09am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "12:29pm"
+            }
+        ],
+        "plane code": "319"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "620.05",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 11 hours 18 minutes",
+        "airline": "",
+        "plane": "Airbus A319",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:45am",
+                "arrival_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "arrival_time": "10:27am"
+            },
+            {
+                "departure_airport": "Rochester, NY (ROC-Greater Rochester Intl.)",
+                "departure_time": "6:24pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "8:03pm"
+            }
+        ],
+        "plane code": "319"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "646.75",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 4 hours 58 minutes",
+        "airline": "Republic Airlines DBA United Express",
+        "plane": "Embraer 175 (Enhanced Winglets)",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:30am",
+                "arrival_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "arrival_time": "12:35pm"
+            },
+            {
+                "departure_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "departure_time": "2:00pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "3:28pm"
+            }
+        ],
+        "plane code": "E7W"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "646.75",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 5 hours 1 minutes",
+        "airline": "Expressjet Airlines DBA United Express",
+        "plane": "Embraer EMB-145",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "2:02pm",
+                "arrival_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "arrival_time": "5:12pm"
+            },
+            {
+                "departure_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "departure_time": "6:30pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "8:03pm"
+            }
+        ],
+        "plane code": "ERJ"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "652.35",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 7 hours 58 minutes",
+        "airline": "Skywest DBA United Express",
+        "plane": "Canadair Regional Jet",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:30am",
+                "arrival_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "arrival_time": "9:43am"
+            },
+            {
+                "departure_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "departure_time": "2:00pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "3:28pm"
+            }
+        ],
+        "plane code": "CRJ"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "652.35",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 9 hours 33 minutes",
+        "airline": "Republic Airlines DBA United Express",
+        "plane": "Embraer 175 (Enhanced Winglets)",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:30am",
+                "arrival_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "arrival_time": "12:35pm"
+            },
+            {
+                "departure_airport": "Burlington, VT (BTV-Burlington Intl.)",
+                "departure_time": "6:30pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "8:03pm"
+            }
+        ],
+        "plane code": "E7W"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "816.31",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 6 hours 35 minutes",
+        "airline": "Air Wisconsin DBA United Express",
+        "plane": "Canadair Regional Jet",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:00pm",
+                "arrival_airport": "Richmond, VA (RIC-Richmond Intl.)",
+                "arrival_time": "3:03pm"
+            },
+            {
+                "departure_airport": "Richmond, VA (RIC-Richmond Intl.)",
+                "departure_time": "5:59pm",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "7:35pm"
+            }
+        ],
+        "plane code": "CRJ"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "821.91",
+        "departure": ", Chicago",
+        "arrival": ", New York",
+        "flight duration": "0 days 10 hours 45 minutes",
+        "airline": "Expressjet Airlines DBA United Express",
+        "plane": "Embraer EMB-145",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:15pm",
+                "arrival_airport": "Richmond, VA (RIC-Richmond Intl.)",
+                "arrival_time": "12:30am"
+            },
+            {
+                "departure_airport": "Richmond, VA (RIC-Richmond Intl.)",
+                "departure_time": "7:25am",
+                "arrival_airport": "New York, NY (JFK-John F. Kennedy Intl.)",
+                "arrival_time": "9:00am"
+            }
+        ],
+        "plane code": "ERJ"
+    }
+]

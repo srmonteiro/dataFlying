@@ -1,0 +1,764 @@
+[
+    {
+        "stops": "1 Stop",
+        "ticket price": "1079.88",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 52 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A321 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:40am",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "11:09am"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "12:20pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "1:32pm"
+            }
+        ],
+        "plane code": "32B"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1141.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 33 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:45am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "10:18am"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1176.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 2 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:00am",
+                "arrival_airport": "Phoenix, AZ (PHX-Sky Harbor Intl.)",
+                "arrival_time": "6:31am"
+            },
+            {
+                "departure_airport": "Phoenix, AZ (PHX-Sky Harbor Intl.)",
+                "departure_time": "7:20am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "9:02am"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1176.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 7 hours 51 minutes",
+        "airline": "American Airlines",
+        "plane": "Embraer 175",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:44am",
+                "arrival_airport": "Fayetteville, AR (XNA-Northwest Arkansas Regional)",
+                "arrival_time": "11:32am"
+            },
+            {
+                "departure_airport": "Fayetteville, AR (XNA-Northwest Arkansas Regional)",
+                "departure_time": "2:08pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "3:35pm"
+            }
+        ],
+        "plane code": "E75"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1377.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 29 minutes",
+        "airline": "United",
+        "plane": "Boeing 777",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:05am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "10:34am"
+            }
+        ],
+        "plane code": "777"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1377.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 31 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "1:48pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "4:19pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1377.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 26 minutes",
+        "airline": "United",
+        "plane": "Boeing 757-300",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:50pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "6:16pm"
+            }
+        ],
+        "plane code": "753"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1377.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 16 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "11:45am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "2:01pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1377.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 32 minutes",
+        "airline": "United",
+        "plane": "Boeing 757-300",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "10:00am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "12:32pm"
+            }
+        ],
+        "plane code": "753"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1412.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 5 minutes",
+        "airline": "Delta",
+        "plane": "Airbus A319",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:55am",
+                "arrival_airport": "Salt Lake City, UT (SLC-Salt Lake City Intl.)",
+                "arrival_time": "10:26am"
+            },
+            {
+                "departure_airport": "Salt Lake City, UT (SLC-Salt Lake City Intl.)",
+                "departure_time": "11:03am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "12:00pm"
+            }
+        ],
+        "plane code": "319"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1412.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 7 hours 26 minutes",
+        "airline": "Delta",
+        "plane": "Boeing 717",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:20am",
+                "arrival_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "arrival_time": "8:39am"
+            },
+            {
+                "departure_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "departure_time": "9:55am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "11:46am"
+            }
+        ],
+        "plane code": "717"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1412.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 7 hours 12 minutes",
+        "airline": "Delta",
+        "plane": "Boeing 717",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:10am",
+                "arrival_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "arrival_time": "11:33am"
+            },
+            {
+                "departure_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "departure_time": "12:38pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "2:22pm"
+            }
+        ],
+        "plane code": "717"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1459.88",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 8 hours 55 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A320 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "3:20pm",
+                "arrival_airport": "Las Vegas, NV (LAS-McCarran Intl.)",
+                "arrival_time": "5:13pm"
+            },
+            {
+                "departure_airport": "Las Vegas, NV (LAS-McCarran Intl.)",
+                "departure_time": "8:54pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "10:15pm"
+            }
+        ],
+        "plane code": "32A"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1489.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 42 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:25am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "11:07am"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1508.00",
+        "departure": ", Chicago",
+        "arrival": ", Ontario",
+        "flight duration": "0 days 8 hours 29 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:15am",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "7:34am"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "10:40am",
+                "arrival_airport": "Ontario, CA (ONT-Los Angeles - Ontario Intl.)",
+                "arrival_time": "11:44am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1508.00",
+        "departure": ", Chicago",
+        "arrival": ", Ontario",
+        "flight duration": "0 days 6 hours 49 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:15am",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "7:34am"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "8:56am",
+                "arrival_airport": "Ontario, CA (ONT-Los Angeles - Ontario Intl.)",
+                "arrival_time": "10:04am"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1508.00",
+        "departure": ", Chicago",
+        "arrival": ", Ontario",
+        "flight duration": "0 days 8 hours 31 minutes",
+        "airline": "American Airlines",
+        "plane": "Airbus A321",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:15am",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "9:43am"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "12:44pm",
+                "arrival_airport": "Ontario, CA (ONT-Los Angeles - Ontario Intl.)",
+                "arrival_time": "1:46pm"
+            }
+        ],
+        "plane code": "321"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1508.00",
+        "departure": ", Chicago",
+        "arrival": ", Ontario",
+        "flight duration": "0 days 6 hours 46 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:00am",
+                "arrival_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "arrival_time": "11:34am"
+            },
+            {
+                "departure_airport": "Dallas, TX (DFW-Dallas-Fort Worth Intl.)",
+                "departure_time": "12:44pm",
+                "arrival_airport": "Ontario, CA (ONT-Los Angeles - Ontario Intl.)",
+                "arrival_time": "1:46pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1524.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 49 minutes",
+        "airline": "American Airlines",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:39pm",
+                "arrival_airport": "Las Vegas, NV (LAS-McCarran Intl.)",
+                "arrival_time": "2:30pm"
+            },
+            {
+                "departure_airport": "Las Vegas, NV (LAS-McCarran Intl.)",
+                "departure_time": "4:07pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "5:28pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1541.12",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 26 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A321 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "5:00pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "7:26pm"
+            }
+        ],
+        "plane code": "32B"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1557.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 28 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:10pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "8:38pm"
+            }
+        ],
+        "plane code": "739"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1557.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 39 minutes",
+        "airline": "United",
+        "plane": "Boeing 777",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:30pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "10:09pm"
+            }
+        ],
+        "plane code": "777"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "1557.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 31 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "2:02pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "4:33pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1557.92",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 1 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A321 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:49pm",
+                "arrival_airport": "Denver, CO (DEN-Denver Intl.)",
+                "arrival_time": "2:27pm"
+            },
+            {
+                "departure_airport": "Denver, CO (DEN-Denver Intl.)",
+                "departure_time": "3:22pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "4:50pm"
+            }
+        ],
+        "plane code": "32B"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1592.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 21 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-900",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "7:35pm",
+                "arrival_airport": "Denver, CO (DEN-Denver Intl.)",
+                "arrival_time": "9:16pm"
+            },
+            {
+                "departure_airport": "Denver, CO (DEN-Denver Intl.)",
+                "departure_time": "10:30pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "11:56pm"
+            }
+        ],
+        "plane code": "739"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1612.00",
+        "departure": ", Chicago",
+        "arrival": ", Ontario",
+        "flight duration": "0 days 8 hours 56 minutes",
+        "airline": "United",
+        "plane": "Boeing 737-800",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:08am",
+                "arrival_airport": "San Francisco, CA (SFO-San Francisco Intl.)",
+                "arrival_time": "11:55am"
+            },
+            {
+                "departure_airport": "San Francisco, CA (SFO-San Francisco Intl.)",
+                "departure_time": "2:35pm",
+                "arrival_airport": "Ontario, CA (ONT-Los Angeles - Ontario Intl.)",
+                "arrival_time": "4:04pm"
+            }
+        ],
+        "plane code": "738"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1755.88",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 6 hours 54 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "Airbus A319",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:36pm",
+                "arrival_airport": "Austin, TX (AUS-Austin-Bergstrom Intl.)",
+                "arrival_time": "7:25pm"
+            },
+            {
+                "departure_airport": "Austin, TX (AUS-Austin-Bergstrom Intl.)",
+                "departure_time": "8:15pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "9:30pm"
+            }
+        ],
+        "plane code": "319"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1820.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 7 hours 0 minutes",
+        "airline": "Delta",
+        "plane": "Boeing 717",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "12:30pm",
+                "arrival_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "arrival_time": "2:47pm"
+            },
+            {
+                "departure_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "departure_time": "3:41pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "5:30pm"
+            }
+        ],
+        "plane code": "717"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1820.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 7 hours 32 minutes",
+        "airline": "Delta",
+        "plane": "Boeing 717",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:59pm",
+                "arrival_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "arrival_time": "7:19pm"
+            },
+            {
+                "departure_airport": "Detroit, MI (DTW-Detroit Metropolitan Wayne County)",
+                "departure_time": "8:51pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "10:31pm"
+            }
+        ],
+        "plane code": "717"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1820.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 8 hours 40 minutes",
+        "airline": "Delta",
+        "plane": "Boeing (Douglas) MD-90",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:00am",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "8:55am"
+            },
+            {
+                "departure_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "departure_time": "11:03am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "12:40pm"
+            }
+        ],
+        "plane code": "M90"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "1820.00",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 8 hours 58 minutes",
+        "airline": "Delta",
+        "plane": "Boeing 717",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "4:00pm",
+                "arrival_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "arrival_time": "7:06pm"
+            },
+            {
+                "departure_airport": "Atlanta, GA (ATL-Hartsfield-Jackson Atlanta Intl.)",
+                "departure_time": "9:15pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "10:58pm"
+            }
+        ],
+        "plane code": "717"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "693.20",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 21 minutes",
+        "airline": "United",
+        "plane": "Boeing 757-300",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:30am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "8:51am"
+            }
+        ],
+        "plane code": "753"
+    },
+    {
+        "stops": "Nonstop",
+        "ticket price": "865.12",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 4 hours 22 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A321 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "6:00am",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "8:22am"
+            }
+        ],
+        "plane code": "32B"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "871.88",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 8 hours 30 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A321 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "8:19am",
+                "arrival_airport": "Las Vegas, NV (LAS-McCarran Intl.)",
+                "arrival_time": "10:10am"
+            },
+            {
+                "departure_airport": "Las Vegas, NV (LAS-McCarran Intl.)",
+                "departure_time": "1:30pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "2:49pm"
+            }
+        ],
+        "plane code": "32B"
+    },
+    {
+        "stops": "1 Stop",
+        "ticket price": "971.92",
+        "departure": ", Chicago",
+        "arrival": ", Los Angeles",
+        "flight duration": "0 days 9 hours 2 minutes",
+        "airline": "Spirit Airlines",
+        "plane": "AIRBUS INDUSTRIE A321 SHARKLETS",
+        "timings": [
+            {
+                "departure_airport": "Chicago, IL (ORD-O'Hare Intl.)",
+                "departure_time": "9:46am",
+                "arrival_airport": "Houston, TX (IAH-George Bush Intercontinental)",
+                "arrival_time": "12:28pm"
+            },
+            {
+                "departure_airport": "Houston, TX (IAH-George Bush Intercontinental)",
+                "departure_time": "3:26pm",
+                "arrival_airport": "Los Angeles, CA (LAX-Los Angeles Intl.)",
+                "arrival_time": "4:48pm"
+            }
+        ],
+        "plane code": "32B"
+    }
+]

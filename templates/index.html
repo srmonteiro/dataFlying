@@ -43,11 +43,15 @@
           <tr>
 
             <td>
+               
               <div class="form-group filter-bg">
                 <ul class="list-group filter-bg" id="filters">  
                   <li class="filter list-group-item filter-bg">
-                    <label for="date">Destination:</label>
-                    <input class="form-control" id="datetime" type="text" placeholder="ORD-ATL, ORD-JFK, ORD-LAX">
+                    <!-- Decided on using a drop-down instead of text entry for noe -->
+                    <!-- <label for="date">Destination:</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="ORD-ATL, ORD-JFK, ORD-LAX"> -->
+                    <label for="flightroute">Destination:</label>
+                    <select id="selDataset" onchange="optionChanged(this.value)" placeholder="ORD-ATL, ORD-JFK, ORD-LAX"></select>
                   </li>
                 </ul>
               </div>
@@ -173,6 +177,51 @@
             </tr>
           </tbody>
         </table>
+        <br><br>
+        <table class="table table-bordered table-hover" style="background-color: #1b3146; padding:25px">
+          
+              <thead class="table-primary" style="background-color: black;">
+                  <tr>                                         <!-- variable in static/js/data.js -->
+                    <th class="table-head">Departure</th>      <!-- timings.departure_airport -->
+                    <th class="table-head">Arrival</th>        <!-- timings.arrival_airport -->
+                    <th class="table-head">Departure Time</th> <!-- timings.departure_time -->
+                    <th class="table-head">Arrival Time</th>   <!-- timings.arrival_time -->
+                    <th class="table-head">Price</th>          <!-- price -->
+                    <th class="table-head">Airline</th>        <!-- airline -->
+                    <th class="table-head">Stops</th>          <!-- stops -->
+
+                  </tr>
+              </thead>
+              <tbody ></tbody>
+                  <tr></tr>
+                  <td> American </td>
+                  <td> 10:05 AM – 12:01 PM </td>
+                  <td> 10:05 AM – 12:01 PM </td>
+                  <td> 3h 56m </td>
+                  <td> ORD–LAS </td>
+                  <td> Nonstop </td>
+                  <td> $448.00 </td>
+                  <tr></tr>
+                  <td> American </td>
+                  <td> 10:05 AM – 12:01 PM </td>
+                  <td> 10:05 AM – 12:01 PM </td>
+                  <td> 3h 56m </td>
+                  <td> ORD–LAS </td>
+                  <td> Nonstop </td>
+                  <td> $448.00 </td>
+                  <tr></tr>
+                  <td> American </td>
+                  <td> 10:05 AM – 12:01 PM </td>
+                  <td> 10:05 AM – 12:01 PM </td>
+                  <td> 3h 56m </td>
+                  <td> ORD–LAS </td>
+                  <td> Nonstop </td>
+                  <td> $448.00 </td>
+                  <tr></tr> 
+                
+          </tbody>
+        </table>
+
       </div>
 
     </div>
