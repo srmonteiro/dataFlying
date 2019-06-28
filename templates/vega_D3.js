@@ -40,7 +40,7 @@ d3.select("input[type=checkbox]").on("change", function () {
 
 // A TopoJSON file that contains the shape elements for the US States
 
-d3.json("static/d3/us-10m.json", function (collection) {
+d3.json("us-10m.json", function (collection) {
 
   states.selectAll("path")
     .data(collection.features)
@@ -51,7 +51,7 @@ d3.json("static/d3/us-10m.json", function (collection) {
 // Reading in a CSV file containing aggregate flight info from 2015 so that we can
 // Scale the circles representing the volume of each flight path, and place the circles in the right place
 
-d3.csv("flights-airport-vega.csv", function (error, flights) {
+d3.csv("static/d3/flights-airport-vega.csv", function (error, flights) {
 
   if (error) return console.warn(error);
   console.log(flights);
@@ -84,8 +84,7 @@ d3.csv("flights-airport-vega.csv", function (error, flights) {
   });                                                                         // Close of flights.forEach
 
 
-// Reading in a CSV file containing information about each US airport with location data
-
+  // Reading in a CSV file containing information about each US airport with location data
   d3.csv("airports_vega.csv", function (airports) {
 
     // Exclude airports with zero flights
@@ -104,6 +103,34 @@ d3.csv("flights-airport-vega.csv", function (error, flights) {
       }
 
     });                                                                      // Close of airports.csv 
+
+    // Compute the Voronoi diagram of airports' projected positions.
+    var polygons = d3.geom.voronoi(positions);
+
+    var g = cells.selectAll("g")
+      .data(airports)
+      .enter().append("svg:g");
+
+    g.append("svg:path")
+      .attr("class", "cell")
+      .attr("d", function (d, i) { return "M" + polygons[i].join("L") + "Z"; })
+      .on("mouseover", function (d, i) { d3.select("h2 span").text(d.name); });
+
+    g.selectAll("path.arc")
+      .data(function (d) { return linksByOrigin[d.iata] || []; })
+      .enter()
+      .append("svg:path")
+      .attr("class", "arc")
+      .attr("d", function (d) { return path(arc(d)); });
+
+    circles.selectAll("circle")
+      .data(airports)
+      .enter()
+      .append("svg:circle")
+      .attr("cx", function (d, i) { return positions[i][0]; })
+      .attr("cy", function (d, i) { return positions[i][1]; })
+      .attr("r", function (d, i) { return Math.sqrt(countByAirport[d.iata]); })
+      .sort(function (a, b) { return countByAirport[b.iata] - countByAirport[a.iata]; });
   });
 });
 
@@ -148,17 +175,17 @@ d3.csv("flights-airport-vega.csv", function (error, flights) {
                             //     }
                             //   });
 
-//     // Compute the Voronoi diagram of airports' projected positions.
-//     var polygons = d3.geom.voronoi(positions);
+                            //     // Compute the Voronoi diagram of airports' projected positions.
+                            //     var polygons = d3.geom.voronoi(positions);
 
-//     var g = cells.selectAll("g")
-//       .data(airports)
-//       .enter().append("svg:g");
+                            //     var g = cells.selectAll("g")
+                            //       .data(airports)
+                            //       .enter().append("svg:g");
 
-//     g.append("svg:path")
-//       .attr("class", "cell")
-//       .attr("d", function (d, i) { return "M" + polygons[i].join("L") + "Z"; })
-//       .on("mouseover", function (d, i) { d3.select("h2 span").text(d.name); });
+                            //     g.append("svg:path")
+                            //       .attr("class", "cell")
+                            //       .attr("d", function (d, i) { return "M" + polygons[i].join("L") + "Z"; })
+                            //       .on("mouseover", function (d, i) { d3.select("h2 span").text(d.name); });
 
 //     g.selectAll("path.arc")
 //       .data(function (d) { return linksByOrigin[d.iata] || []; })

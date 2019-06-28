@@ -34,45 +34,20 @@
         <p>Literally the best app ever designed for air travel and we are open to investors</p>
       </div>
     </div>
-    <div class="well filter-bg">
-      <div class="container">
-        <table class="table" style="padding:20px; align-self: center;" width="100%">
-          <tr>
-            <td class="form-group filter-bg">
-              <h5 class="h5 light">Departure:</h5>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            </td>
-            <td class="form-group filter-bg">
-              <h5 class="h5 light">Arrival:</h5>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            </td>
-            <td class="form-group filter-bg">
-              <h5 class="h5 light">Month:</h5>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            </td>
-            <td class="form-group filter-bg">
 
-              <button id="filter-btn" type="submit" class="btn btn-default" style="margin-top: 30px; width: 50%">Show me
-                the flights</button>
-
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
 
     <div class="well filter-bg">
-
+  
       <form>
         <table class="table filter-bg" width="100%">
           <tr>
 
             <td>
               <div class="form-group filter-bg">
-                <ul class="list-group filter-bg" id="filters">
+                <ul class="list-group filter-bg" id="filters">  
                   <li class="filter list-group-item filter-bg">
                     <label for="date">Destination:</label>
-                    <input class="form-control" id="datetime" type="text" placeholder="ORD, LAX, SFO">
+                    <input class="form-control" id="datetime" type="text" placeholder="ORD-ATL, ORD-JFK, ORD-LAX">
                   </li>
                 </ul>
               </div>
@@ -86,9 +61,12 @@
             </td>
           </tr>
         </table>
-
+        
       </form>
+      <div style="margin-left:22px"><p>With the free beta version, you have the option to select from three ORD-based flight paths. Get travelling Chicago.
+        </p>  </div>
     </div>
+    
   </div>
   <!-- ROW 1  Filters and Wanna Get Away -->
   <hr>
@@ -224,6 +202,7 @@
         <div id="bubbleplots">
           <div class="bubbleplot" data-num="0">
             <div class="plot" id="plotdiv"></div>
+            <script src="static/js/plotly.js"></script>
             <div class="control-row">
               <strong>Route: </strong> <select class="routedata">
               </select>
@@ -232,98 +211,6 @@
         </div>
       </div>
 
-      <!-- <script>
-
-        /************************JAVASCRIPT CODE START ************************/
-
-        Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/AlexNUCHIDATABOOTCAMP/master/allroutes.csv', function (err, rows) {
-
-          function unpack(rows, key) {
-            return rows.map(function (row) { return row[key]; });
-          }
-
-          var allRoutes = unpack(rows, 'ROUTE'),
-            days = unpack(rows, 'DAY'),
-            delay = unpack(rows, 'DELAY'),
-            listofRoutes = [],
-            weekday = [],
-            delayminutes = [];
-
-          for (var i = 0; i < allRoutes.length; i++) {
-            if (listofRoutes.indexOf(allRoutes[i]) === -1) {
-              listofRoutes.push(allRoutes[i]);
-            }
-          }
-
-          function getRouteData(chosenRoute) {
-            weekday = [];
-            delayminutes = [];
-            for (var i = 0; i < allRoutes.length; i++) {
-              if (allRoutes[i] === chosenRoute) {
-                weekday.push(days[i]);
-                delayminutes.push(delay[i]);
-              }
-            }
-          };
-
-          // Default Country Data
-          setBubblePlot('ORD - MIA');
-
-          function setBubblePlot(chosenRoute) {
-            getRouteData(chosenRoute);
-
-            var trace1 = {
-              x: weekday,
-              y: delayminutes,
-              mode: 'lines+markers',
-              marker: {
-                size: 15,
-                opacity: 0.8
-              }
-            };
-
-            var data = [trace1];
-
-            var layout = {
-              title: 'DELAY BY WEEKDAY FOR 2015',
-              height: 500,
-              width: 700,
-              xaxis: {
-                title: "WEEKDAY"
-              },
-              yaxis: {
-                title: "DELAY IN MINUTES FOR 2015"
-              },
-
-
-            };
-
-            Plotly.newPlot('plotdiv', data, layout);
-          };
-
-          var innerContainer = document.querySelector('[data-num="0"'),
-            plotEl = innerContainer.querySelector('.plot'),
-            RouteSelector = innerContainer.querySelector('.routedata');
-
-          function assignOptions(textArray, selector) {
-            for (var i = 0; i < textArray.length; i++) {
-              var currentOption = document.createElement('option');
-              currentOption.text = textArray[i];
-              selector.appendChild(currentOption);
-            }
-          }
-
-          assignOptions(listofRoutes, RouteSelector);
-
-          function updateRoute() {
-            setBubblePlot(RouteSelector.value);
-          }
-
-          RouteSelector.addEventListener('change', updateRoute, false);
-        });
-
-        /************************JAVASCRIPT CODE END ************************/
-    </script> -->
 
     </div><br>
     <hr>
@@ -350,10 +237,6 @@
         <!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
         <!-- id #hub-price-map-d3 -->
 
-
-        <img src="static/images/inspiration_1.png" width="100%">
-
-        <div id="hub-price-map-d3"></div>
 
 
 
@@ -383,15 +266,21 @@
 
       <!-- D3 -->
 
-      <iframe src="https://mbostock.github.io/d3/talk/20111116/airports.html" width="100%" height="1000"></iframe>
+      <!-- HERE'S WHAT IT SHOULD LOOK LIKE  -->
+      <div class="container">
+          <iframe src="https://mbostock.github.io/d3/talk/20111116/airports.html" width="100%" height="1000"></iframe>
+          </div>
 
-
-      <script type="text/javascript" src="static/d3/d3.js"></script>
+      <!-- NECESSARY PACKAGES FOR D3  -->
       <script src="https://d3js.org/d3.v5.min.js"></script>
-
-      <script type="text/javascript" src="static/d3/d3.geom.js"></script>
       <script type="text/javascript" src="static/d3/d3.geo.js"></script>
+
+      <!-- OUR D3  -->
       <script type="text/javascript" src="static/d3/vega_D3.js" width="100%"></script>
+
+      <!-- NECESSARY PACKAGES FOR D3  -->
+      <!-- <script type="text/javascript" src="static/d3/d3.geom.js"></script> -->
+      <!-- <script type="text/javascript" src="static/d3/d3.js"></script> -->
 
       <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
     </div>
