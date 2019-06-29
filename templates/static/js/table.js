@@ -65,19 +65,22 @@ filter_btn.on("click", function () {
     // Select query terms from the form
     var flightPath = d3.select("#flightPath");
     console.log(flightPath);
-
     var selectedRoute = flightPath.property("value");
+
+    var queryTerms = [selectedRoute];
+    var finalFlight = queryTerms.toString()
+    console.log(finalFlight);
 
     // Remove default dataTable with on last query results
 
 
-    if (selectedRoute == '') {
+    if (finalFlight == '' || finalFlight == 'ORD-ATL') {
         var queryResults = ORDtoATL;
     }
-    else if (selectedRoute == 'ORD-JFK') {
+    else if (finalFlight == 'ORD-JFK') {
         var queryResults = ORDtoJFK;
     }
-    else (selectedRoute == 'ORD-LAX')
+    else (finalFlight == 'ORD-LAX')
          {
         var queryResults = ORDtoLAX;
     }

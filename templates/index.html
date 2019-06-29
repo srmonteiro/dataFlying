@@ -21,6 +21,8 @@
 
   <!-- Vega.js Embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@4"></script>
 
 </head>
 <!-- Begin Body -->
@@ -82,11 +84,11 @@
         <h3>The Three Cheapest Flights, Each Day this Upcoming Week</h3>
         <h5 class="text-dark">
           <p>for your destination of choice via the
-            <a href="https://expediaconnectivity.com/developer" target="_blank">Expedia API</a>.
+            <a href="https://expediaconnectivity.com/developer" target="_blank">Expedia Web Scraper</a>.
             Processed in pandas and read in to a js file as modified json.</p>
         </h5>
 
-        <table class="table table-bordered table-striped table-hover" style="background-color: #1b3146; padding:25px">
+        <table class="table table-bordered table-striped table-hover" style="background-color: #255484; padding:25px">
 
           <thead class="table-primary" style="background-color: black;">
             <tr>
@@ -135,12 +137,14 @@
         <div id="placeholder"></div>
       </div>
       <div class="col-md-10">
-        <h3>Best times to fly your itinerary</h3>
+        <div><h3>Best times to fly your itinerary</h3>
 
         <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
           <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>. Only flights with a delay are included in the average,
-          so check the next viz to see how many flights are delayed each day of the week on average to get the full picture. 
-        </h5>
+          so check the next viz to see how many flights are delayed each day of the week on average to get the full picture. <br>
+          <br><br><br><br><br>
+        </h5></div>
+        
 
         <!-- Here's where we connect to Ease of Travel Graphics  -->
         <!-- id #flight-delays-->
@@ -210,14 +214,18 @@
     <div class="container">
       <div class="col-md-12">
 
-        <h3>Flight prices for your hub</h3>
+        <h3>Flight prices for your hub // Was the goal</h3>
 
         <h5 class="text-dark">Extending a Vega package developed by
           <a href="https://mbostock.github.io/d3/talk/20111116/airports.html" target="_blank">Mike Bostock, creator of
             d3</a>, and connecting with the <a
             href="https://www.scrapehero.com/scrape-flight-schedules-and-prices-from-expedia/" target="_blank">
             Egencia API</a>, you can find the lowest price direct flights from your hub, taking off in the next 48 hrs.
+            <p>For now, we can map all flight paths from all airports. We'll show you the filter, interactive
+              version once you invest in our company. 
+            </p>
         </h5>
+        
 
         <!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
         <!-- id #hub-price-map-d3 -->
@@ -225,11 +233,7 @@
 
         <!-- D3 -->
 
-        <!-- HERE'S WHAT IT SHOULD LOOK LIKE  -->
-        <div class="container">
-          <iframe src="https://mbostock.github.io/d3/talk/20111116/airports.html" width="100%" height="1000"></iframe>
-        </div>
-
+        
         <!-- NECESSARY PACKAGES FOR D3  -->
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script type="text/javascript" src="static/d3/d3.geo.js"></script>
@@ -246,18 +250,17 @@
         </script>
       
 
+      <br><br><br>
+      <!-- HERE'S WHAT IT SHOULD LOOK LIKE  -->
+        <div class="container">
+            <iframe src="https://mbostock.github.io/d3/talk/20111116/airports.html" width="100%" height="1000"></iframe>
+          </div>
+
         <!-- NECESSARY PACKAGES FOR D3  -->
         <!-- <script type="text/javascript" src="static/d3/d3.geom.js"></script> -->
         <!-- <script type="text/javascript" src="static/d3/d3.js"></script> -->
 
-        
-
-<script type="text/javascript">
-  var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
-  vegaEmbed('#vis', spec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+    
 
         <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
       </div>
@@ -271,7 +274,7 @@
     <!-- Footer Links -->
     <br><br><br>
     <!-- Copyright -->
-    <div style="background-color: #1b3146; padding: 20px;" class="footer-copyright text-center py-3" id="footer-strip">
+    <div style="background-color: #255484; padding: 20px;" class="footer-copyright text-center py-3" id="footer-strip">
       Group 2 // Project 2 // dataFlying (c) Copywrite Coding Bootcamp 2017
     </div>
   </footer>

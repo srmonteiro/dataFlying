@@ -39,7 +39,7 @@ padding: 40px;
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #1b3146;
+  background: #255484;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -49,7 +49,7 @@ padding: 40px;
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #255484;
 }
 
 .navbar {
@@ -76,6 +76,17 @@ padding: 40px;
   
 }
 
+.btn-default {
+  background-color: #7AAFD5;
+  
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #5D86A5; 
+  
+ }
+
 .filters {
   margin-top: 10px;
 }
@@ -84,7 +95,7 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  color: #7AAFD5;
   outline: none;
 }
 
@@ -136,29 +147,29 @@ select {
 }
 
 .filter-bg {
-  background-color: #1b3146;
+  background-color: #255484;
 }
 
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: #7AAFD5;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8e979f;
+  color: #7AAFD5;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
-  color: #8e979f;
+  color: #7AAFD5;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #8e979f;
+  color: #7AAFD5;
 }
 
 /* media queries which will only be activated at specific screen sizes */
@@ -176,7 +187,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #255484;
   }
 
   #table-area tr td:last-child {

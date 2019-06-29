@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "width": 900,
   "height": 560,
-  "padding": {"top": 0, "left": 0, "right": 0, "bottom": 0},
+  "padding": {"top": 20, "left": 0, "right": 0, "bottom": 0},
   "signals": [
               {
               "name": "hover",
@@ -21,7 +21,7 @@
   "data": [
             {
                 "name": "states",
-                "url": "data/us-10m.json",
+                "url": "static/d3/us-10m.json",
                 "format": {"type": "topojson", "feature": "states"},
                 "transform": [
                   {
@@ -32,7 +32,7 @@
             },
             {
               "name": "traffic",
-              "url": "data/flights-airport.csv",
+              "url": "static/d3/flights-airport-vega.csv",
               "format": {"type": "csv", "parse": "auto"},
               "transform": [
                 {
@@ -44,7 +44,7 @@
             },
             {
   "name": "airports",
-  "url": "data/airports.csv",
+  "url": "static/d3/airports-vega.csv",
   "format": {"type": "csv", "parse": "auto"},
   "transform": [
     {
@@ -75,7 +75,7 @@
 }, 
 {
   "name": "routes",
-  "url": "data/flights-airport.csv",
+  "url": "static/d3/flights-airport-vega.csv",
   "format": {"type": "csv", "parse": "auto"},
   "transform": [
     

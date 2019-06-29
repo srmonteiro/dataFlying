@@ -48,7 +48,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/JSON-files/master/d
               y: delayminutes,
               type: 'bar',
               marker: {
-                color: '#1b3146'
+                color: '#255484'
               }
             };
 
@@ -57,7 +57,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/JSON-files/master/d
             var layout = {
               title: 'DELAY BY WEEKDAY FOR 2015',
               autosize: true,
-              height: 600,
+              height: 500,
 
               xaxis: {
                 title: "WEEKDAY"
