@@ -3,7 +3,7 @@
 // Here's where the Plot.ly Average Delay Bar Chart Begins
 
 // Read-in data stored on Koynoff's github
-Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/AlexNUCHIDATABOOTCAMP/master/allroutes.csv', function (err, rows) {
+Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/JSON-files/master/delayALLROUTES.csv', function (err, rows) {
 
           function unpack(rows, key) {
             return rows.map(function (row) { return row[key]; });
@@ -31,7 +31,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/AlexNUCHIDATABOOTCA
             for (var i = 0; i < allRoutes.length; i++) {
               if (allRoutes[i] === chosenRoute) {
                 weekday.push(days[i]);
-                delayminutes.push(delay[i]/60);
+                delayminutes.push(delay[i]);
               }
             }
           };
@@ -98,36 +98,36 @@ Plotly.d3.csv('https://raw.githubusercontent.com/alexkoynoff/AlexNUCHIDATABOOTCA
 
 var betaRoutes = ["ORD-ATL", "ORD-JFK", "ORD-LAX"]
 
-function init() {
-    // Grab a reference to the dropdown select element
-    var selector = d3.select("#selDataset");
-    //console.log(selector)
-    // Use the list of sample names to populate the select options
-    d3.json("/names").then((betaRoutes) => {                                         // THIS NEEDS SOME WORK
-      //console.log(sampleNames[0]);
-      betaRoutes.forEach((route) => {
-        selector
-          .append("option")
-          .text(route)
-          .property("value", route);
+// function init() {
+//     // Grab a reference to the dropdown select element
+//     var selector = d3.select("#selDataset");
+//     //console.log(selector);
+//     // Use the list of sample names to populate the select options
+//     d3.json("/names").then((betaRoutes) => {                                         // THIS NEEDS SOME WORK
+//       //console.log(sampleNames[0]);
+//       betaRoutes.forEach((route) => {
+//         selector
+//           .append("option")
+//           .text(route)
+//           .property("value", route);
         
-      });
+//       });
       
-      // Use the first sample from the list to build the initial plots
-      const firstRoute = betaRoutes[0];
-      console.log(firstRoute);
-      buildCharts(firstRoute);
-      buildMetadata(firstRoute);
-    });
-  }
+//       // Use the first sample from the list to build the initial plots
+//       const firstRoute = betaRoutes[0];
+//       console.log(firstRoute);
+//       buildCharts(firstRoute);
+//       buildMetadata(firstRoute);
+//     });
+//   }
 
-  // Fetch flight route data when new selection is picked and build new charts
-  function optionChanged(newRoute) {
-    buildCharts(newRoute);
-    buildMetadata(newRoute);
-  }
+//   // Fetch flight route data when new selection is picked and build new charts
+//   function optionChanged(newRoute) {
+//     buildCharts(newRoute);
+//     buildMetadata(newRoute);
+//   }
   
-  // Initialize the dashboard
-  init();
+//   // Initialize the dashboard
+//   init();
 
         /************************JAVASCRIPT CODE END ************************/

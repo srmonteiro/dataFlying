@@ -14,10 +14,13 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 
   <!--Plotly.js-->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Vega.js Embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 
 </head>
 <!-- Begin Body -->
@@ -32,253 +35,186 @@
       <div class="col-md-12 text-center">
         <h1>Fare Air Dashboard</h1>
         <p>Literally the best app ever designed for air travel and we are open to investors</p>
+        <p>With the free beta version, you have the option to select from three ORD-based
+          flight paths. Get travelling
+          Chicago.</p>
       </div>
     </div>
 
-
-    <div class="well filter-bg">
-  
-      <form>
-        <table class="table filter-bg" width="100%">
-          <tr>
-
-            <td>
-               
-              <div class="form-group filter-bg">
-                <ul class="list-group filter-bg" id="filters">  
-                  <li class="filter list-group-item filter-bg">
-                    <!-- Decided on using a drop-down instead of text entry for noe -->
-                    <!-- <label for="date">Destination:</label>
-                    <input class="form-control" id="datetime" type="text" placeholder="ORD-ATL, ORD-JFK, ORD-LAX"> -->
-                    <label for="flightroute">Destination:</label>
-                    <select id="selDataset" onchange="optionChanged(this.value)" placeholder="ORD-ATL, ORD-JFK, ORD-LAX"></select>
-                  </li>
-                </ul>
-              </div>
-            </td>
-
-            <td>
-
-              <button id="filter-btn" type="submit" class="btn btn-default" style="margin-top: 30px; width: 100%">Show
-                me the flights</button>
-
-            </td>
-          </tr>
-        </table>
-        
-      </form>
-      <div style="margin-left:22px"><p>With the free beta version, you have the option to select from three ORD-based flight paths. Get travelling Chicago.
-        </p>  </div>
-    </div>
-    
   </div>
+
+  <div class="row filter-bg">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="well filter-bg">
+          <form>
+              <div class="col-md-6">
+                <div class="form-group filter-bg">
+                  <ul class="list-group filter-bg" id="filters">
+                    <li class="filter list-group-item filter-bg">
+                      <input class="form-control" id="flightPath" type="text" placeholder="ORD-ATL, ORD-JFK, ORD-LAX">
+                      <br>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <button id="filter-btn" type="submit" class="btn btn-default" style="margin-top: 10px; width: 100%">Show
+                  me the flights</button></div>
+            </form>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
   <!-- ROW 1  Filters and Wanna Get Away -->
-  <hr>
+  
   <div class="container">
     <div class="row">
 
-      <div class="col-md-2">
-        <h3>At a Glance</h3>
-        <h5>Route Report</h5>
-        <div class="panel panel-primary">
-          <div class="panel panel-body" style="background-color: #1b3146">
-            <h5 class="h5 light">
-              <p>Cheapest Flight: <br>$201.70</p>
-              <p>Flight Duration: <br>2hr 20min</p>
-              <p>Average Delay: <br>14min</p>
-            </h5>
-            <!-- Here's where we connect to the Flight Stats: Cheapest Fare,  -->
-            <!-- id #flight-stats-panel -->
-            <div id="flight-stats-panel" class="panel-body" style="background-color: #1b3146"></div>
-          </div>
-        </div>
+      <div class="col-md-1">
+
       </div>
 
       <!--Wanna Get Away Container Begins  -->
 
       <div class="col-md-10">
-        <h3>Here's where our Wanna Get Away Table might land</h3>
-        <h5 class="text-dark">Flights available for your itinerary, via the
-          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Egencia API</a>
+        <h3>The Three Cheapest Flights, Each Day this Upcoming Week</h3>
+        <h5 class="text-dark">
+          <p>for your destination of choice via the
+            <a href="https://expediaconnectivity.com/developer" target="_blank">Expedia API</a>.
+            Processed in pandas and read in to a js file as modified json.</p>
         </h5>
 
-        <!-- Here's where we connect to the Wanna Get Away Flight Table  -->
-        <!-- id #flight-table-area -->
+        <table class="table table-bordered table-striped table-hover" style="background-color: #1b3146; padding:25px">
 
-        <div id="flight-table-area"></div>
-
-        <!-- Wanna Get Away Flight Table Stock data for reference -->
-
-        <table class="table table-bordered table-hover" style="background-color: #1b3146; padding:25px">
           <thead class="table-primary" style="background-color: black;">
-            <th class="table-primary"> Airline </th>
-            <th class="table-primary"> Time </th>
-            <th class="table-primary"> Length </th>
-            <th class="table-primary"> Route </th>
-            <th class="table-primary"> Type </th>
-            <th class="table-primary"> Price </th>
-          </thead>
-          <tbody>
             <tr>
-              <td> American </td>
-              <td> 3:30 PM – 5:23 PM </td>
-              <td> 3h 53m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $341.00 </td>
-            </tr>
-            <tr>
-              <td> United </td>
-              <td> 8:01 AM – 9:53 AM </td>
-              <td> 3h 52m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $361.00 </td>
-            </tr>
-            <tr>
-              <td> United </td>
-              <td> 12:45 PM – 2:47 PM </td>
-              <td> 4h 2m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $361.00 </td>
-            </tr>
-            <tr>
-              <td> United </td>
-              <td> 3:55 PM – 5:57 PM </td>
-              <td> 4h 2m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $361.00 </td>
-            </tr>
-            <tr>
-              <td> American </td>
-              <td> 12:40 PM – 2:31 PM </td>
-              <td> 3h 51m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $376.00 </td>
-            </tr>
-            <tr>
-              <td> United </td>
-              <td> 10:30 AM – 12:31 PM </td>
-              <td> 4h 1m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $391.00 </td>
-            </tr>
-            <tr>
-              <td> American </td>
-              <td> 10:05 AM – 12:01 PM </td>
-              <td> 3h 56m </td>
-              <td> ORD–LAS </td>
-              <td> Nonstop </td>
-              <td> $448.00 </td>
-            </tr>
-          </tbody>
-        </table>
-        <br><br>
-        <table class="table table-bordered table-hover" style="background-color: #1b3146; padding:25px">
-          
-              <thead class="table-primary" style="background-color: black;">
-                  <tr>                                         <!-- variable in static/js/data.js -->
-                    <th class="table-head">Departure</th>      <!-- timings.departure_airport -->
-                    <th class="table-head">Arrival</th>        <!-- timings.arrival_airport -->
-                    <th class="table-head">Departure Time</th> <!-- timings.departure_time -->
-                    <th class="table-head">Arrival Time</th>   <!-- timings.arrival_time -->
-                    <th class="table-head">Price</th>          <!-- price -->
-                    <th class="table-head">Airline</th>        <!-- airline -->
-                    <th class="table-head">Stops</th>          <!-- stops -->
+              <!-- variable in static/js/data.js -->
+              <th class="table-head">Date</th> <!-- timings.departure_airport -->
+              <th class="table-head">Departure</th> <!-- timings.departure_airport -->
+              <th class="table-head">Arrival</th> <!-- timings.arrival_airport -->
+              <th class="table-head">Departure Time</th> <!-- timings.departure_time -->
+              <th class="table-head">Arrival Time</th> <!-- timings.arrival_time -->
+              <th class="table-head">Price</th> <!-- price -->
+              <th class="table-head">Airline</th> <!-- airline -->
+              <th class="table-head">Stops</th> <!-- stops -->
 
-                  </tr>
-              </thead>
-              <tbody ></tbody>
-                  <tr></tr>
-                  <td> American </td>
-                  <td> 10:05 AM – 12:01 PM </td>
-                  <td> 10:05 AM – 12:01 PM </td>
-                  <td> 3h 56m </td>
-                  <td> ORD–LAS </td>
-                  <td> Nonstop </td>
-                  <td> $448.00 </td>
-                  <tr></tr>
-                  <td> American </td>
-                  <td> 10:05 AM – 12:01 PM </td>
-                  <td> 10:05 AM – 12:01 PM </td>
-                  <td> 3h 56m </td>
-                  <td> ORD–LAS </td>
-                  <td> Nonstop </td>
-                  <td> $448.00 </td>
-                  <tr></tr>
-                  <td> American </td>
-                  <td> 10:05 AM – 12:01 PM </td>
-                  <td> 10:05 AM – 12:01 PM </td>
-                  <td> 3h 56m </td>
-                  <td> ORD–LAS </td>
-                  <td> Nonstop </td>
-                  <td> $448.00 </td>
-                  <tr></tr> 
-                
+            </tr>
+            <tr></tr>
+          </thead>
+          <tbody></tbody>
+
+
           </tbody>
         </table>
 
       </div>
 
+      <div class="col-md-1">
+
+      </div>
+<br>
     </div>
-    <hr>
+
   </div>
+
+
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row"><br></div>
+      <hr>
+    </div>
   </div>
 
   <!-- ROW 2 Best Travel Months Viz -->
 
   <div class="container">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-1">
         <div id="placeholder"></div>
       </div>
       <div class="col-md-10">
         <h3>Best times to fly your itinerary</h3>
 
         <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson via
-          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>
+          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Kaggle</a>. Only flights with a delay are included in the average,
+          so check the next viz to see how many flights are delayed each day of the week on average to get the full picture. 
         </h5>
 
         <!-- Here's where we connect to Ease of Travel Graphics  -->
         <!-- id #flight-delays-->
 
-      <div class="showcase__section" id="bubble">
-        <div class="spacer --small"></div>
-        <div id="bubbleplots">
-          <div class="bubbleplot" data-num="0">
-            <div class="plot" id="plotdiv"></div>
-            <script src="static/js/plotly.js"></script>
-            <div class="control-row">
-              <strong>Route: </strong> <select class="routedata">
-              </select>
+        <div class="showcase__section" id="bubble">
+          <div class="spacer --small"></div>
+          <div id="bubbleplots">
+            <div class="bubbleplot" data-num="0">
+              <div class="plot" id="plotdiv"></div>
+              <script src="static/js/plotly.js"></script>
+              <div class="control-row">
+                <strong>Route: </strong> <select class="routedata">
+                </select>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-
-    </div><br>
-    <hr>
-  </div>
-
-
-  <!-- ROW 3 Hub Map -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2">
 
       </div>
-      <div class="col-md-10">
+    </div>
+    </div>
+
+    <br><br><div class="container">
+        <div class="col-md-12">
+          <div class="row"><hr>
+            </div></div></div>
+            <br>
+      <div class="container">
+          <div class="col-md-12">
+            <div class="row">
+
+                <h3>Best times to fly your itinerary</h3>
+
+                <h5 class="text-dark">Based on 2015 dataset of domestic flights compiled by Fredrik Jonsson, 
+                  and hosted on the Tableau Public of your friendly neighborhood data scientist
+                  <a href="https://public.tableau.com/profile/alex.koynoff#!/vizhome/FlightsDelay_15617748105140/Sheet1" target="_blank">Alex Koynoff</a>
+                </h5>
+
+                
+
+                <div class='tableauPlaceholder' id='viz1561775041355' style='position: relative'>
+                <noscript><a href='#'>
+                  <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;5B&#47;5B24H99K6&#47;1_rss.png' style='border: none' />
+                  </a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='path' value='shared&#47;5B24H99K6' /> 
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;5B&#47;5B24H99K6&#47;1.png' /> 
+                  <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                  </object></div> <script type='text/javascript'>
+                   var divElement = document.getElementById('viz1561775041355');
+                   var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; 
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+            <hr>
+          </div>
+        </div>
+
+    <!-- ROW 3 Hub Map -->
+    <div class="container">
+      <div class="col-md-12">
 
         <h3>Flight prices for your hub</h3>
 
         <h5 class="text-dark">Extending a Vega package developed by
-          <a href="https://www.kaggle.com/freddejn/flights" target="_blank">Mike Bostock, creator of d3</a>
-          , and connecting with the <a
+          <a href="https://mbostock.github.io/d3/talk/20111116/airports.html" target="_blank">Mike Bostock, creator of
+            d3</a>, and connecting with the <a
             href="https://www.scrapehero.com/scrape-flight-schedules-and-prices-from-expedia/" target="_blank">
             Egencia API</a>, you can find the lowest price direct flights from your hub, taking off in the next 48 hrs.
         </h5>
@@ -287,53 +223,45 @@
         <!-- id #hub-price-map-d3 -->
 
 
+        <!-- D3 -->
 
+        <!-- HERE'S WHAT IT SHOULD LOOK LIKE  -->
+        <div class="container">
+          <iframe src="https://mbostock.github.io/d3/talk/20111116/airports.html" width="100%" height="1000"></iframe>
+        </div>
 
+        <!-- NECESSARY PACKAGES FOR D3  -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script type="text/javascript" src="static/d3/d3.geo.js"></script>
 
+        <!-- OUR D3  -->
 
+        <div id="vis"></div> 
+
+        <script type="text/javascript">
+        var spec = "static/d3/vega_airports.json";
+        vegaEmbed('#vis', spec).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);  
+        </script>
+      
+
+        <!-- NECESSARY PACKAGES FOR D3  -->
+        <!-- <script type="text/javascript" src="static/d3/d3.geom.js"></script> -->
+        <!-- <script type="text/javascript" src="static/d3/d3.js"></script> -->
+
+        
+
+<script type="text/javascript">
+  var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
+  vegaEmbed('#vis', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+        <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
       </div>
     </div>
-  </div>
-
-  <!-- ROW 3 Hub Map -->
-  <div class="container">
-    <div class="col-md-12">
-
-      <h3>Flight prices for your hub</h3>
-
-      <h5 class="text-dark">Extending a Vega package developed by
-        <a href="https://mbostock.github.io/d3/talk/20111116/airports.html" target="_blank">Mike Bostock, creator of
-          d3</a>
-        , and connecting with the <a href="https://www.scrapehero.com/scrape-flight-schedules-and-prices-from-expedia/"
-          target="_blank">
-          Egencia API</a>, you can find the lowest price direct flights from your hub, taking off in the next 48 hrs.
-      </h5>
-
-      <!-- Here's where we connect to the d3 Chart mapping flight routes and today's prices  -->
-      <!-- id #hub-price-map-d3 -->
-
-
-      <!-- D3 -->
-
-      <!-- HERE'S WHAT IT SHOULD LOOK LIKE  -->
-      <div class="container">
-          <iframe src="https://mbostock.github.io/d3/talk/20111116/airports.html" width="100%" height="1000"></iframe>
-          </div>
-
-      <!-- NECESSARY PACKAGES FOR D3  -->
-      <script src="https://d3js.org/d3.v5.min.js"></script>
-      <script type="text/javascript" src="static/d3/d3.geo.js"></script>
-
-      <!-- OUR D3  -->
-      <script type="text/javascript" src="static/d3/vega_D3.js" width="100%"></script>
-
-      <!-- NECESSARY PACKAGES FOR D3  -->
-      <!-- <script type="text/javascript" src="static/d3/d3.geom.js"></script> -->
-      <!-- <script type="text/javascript" src="static/d3/d3.js"></script> -->
-
-      <div id="coverTemperature" style="background-color: rgb(255, 255, 255); opacity: 0; display: block;"></div>
-    </div>
-  </div>
   </div>
 
   <!-- Footer -->
@@ -346,15 +274,13 @@
     <div style="background-color: #1b3146; padding: 20px;" class="footer-copyright text-center py-3" id="footer-strip">
       Group 2 // Project 2 // dataFlying (c) Copywrite Coding Bootcamp 2017
     </div>
-    <!-- Copyright -->
-
   </footer>
   <!-- Footer -->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/table.js"></script>
 
-  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
   <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
   <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
