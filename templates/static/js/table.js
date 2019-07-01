@@ -15,7 +15,7 @@ var tbody = d3.select("tbody");
 // elements we will have in the table ... 
 // timings.departure_airport, timings.arrival_airport, timings.departure_time, timings.arrival_time, price, airline, stops
 
-// Query tableData for each sighting
+// On page load, show route for ORD to ATL Flights
 ORDtoATL.forEach(flight => {
 
     var stops = flight.stops;
@@ -52,10 +52,10 @@ ORDtoATL.forEach(flight => {
             });
 });
 
-var filter_btn = d3.select("#filter-btn");
+var btn = d3.select("#btn");
 
 // On click, generate new table with filter query
-filter_btn.on("click", function () {
+btn.on("click", function () {
 
     // Don't reload the page unless button is clicked 
     d3.event.preventDefault();
@@ -70,21 +70,25 @@ filter_btn.on("click", function () {
     var queryTerms = [selectedRoute];
     var finalFlight = queryTerms.toString()
     console.log(finalFlight);
+    console.log(typeof finalFlight);
 
     // Remove default dataTable with on last query results
 
+    // var JFK = "JFK"; 
 
-    if (finalFlight == '' || finalFlight == 'ORD-ATL') {
+    if (finalFlight === "ATL") {
         var queryResults = ORDtoATL;
-    }
-    else if (finalFlight == 'ORD-JFK') {
+        }
+    else if (finalFlight === "JFK") {
         var queryResults = ORDtoJFK;
-    }
-    else (finalFlight == 'ORD-LAX')
+        }
+    else if (finalFlight === "LAX")
          {
         var queryResults = ORDtoLAX;
-    }
+        }
+    
 
+        console.log(queryResults);
 
     queryResults.forEach(flight => {
         var stops = flight.stops;
@@ -108,12 +112,14 @@ filter_btn.on("click", function () {
         7: stops
     }];
 
+    console.log(flightKey);
+
     var row = tbody.append("tr");
 
             flightKey.forEach(selectedFlights => {
                 Object.entries(selectedFlights).forEach(function ([key, value]) {
                     var cell = row.append("td");
-                    // console.log(value);
+                    console.log(value);
                     cell.text(value);
                 });
             });

@@ -120,8 +120,8 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 500px;
-  padding: 20px;
+  height: 650px;
+  padding: 200px;
   margin: 0;
   background: black;
 
