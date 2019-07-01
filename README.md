@@ -32,21 +32,21 @@
    *   Python 
    *   SQL
    *   HTML/CSS Bootstrap
-   *   FLASK RESTful API
+   *   FLASK RESTful API { Work in Progress }
    *   Javascript
    *   Plotly.js
    *   Leaflet.js
 
 ## Please see the photo below for a quick sketch of what our INTERACTIVE WEB DASHBOARD will look like.
 
-![Interactive Dashboard](static/images/whiteboarding.png)
+![Interactive Dashboard](templates/static/images/whiteboarding.png)
 
 ## Images that gave us “inspiration”
 
-![inspiration_1](static/images/inspiration_1.png)
-![inspiration_2](static/images/inspiration_2.png)
-![inspiration_3](static/images/inspiration_3.png)
-![inspiration_4](static/images/inspiration_4.png)
+![inspiration_1](templates/static/images/inspiration_1.png)
+![inspiration_2](templates/static/images/inspiration_2.png)
+![inspiration_3](templates/static/images/inspiration_3.png)
+![inspiration_4](templates/static/images/inspiration_4.png)
 
 - - -
 
